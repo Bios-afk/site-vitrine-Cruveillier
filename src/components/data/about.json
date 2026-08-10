@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "About",
+    "description": "Next Level Mentors is a media platform unveiling the future of technology, gadgets, and innovation — through shows, podcasts, and writing.",
+    "themeColor": "#0b0d07"
+  },
+  "hero": {
+    "eyebrow": "About Us",
+    "title": "We unveil what's",
+    "accentWord": "next.",
+    "description": "Next Level Mentors is a media platform for the curious builder. Through shows, podcasts, and essays we connect the people shaping technology with the people learning from them.",
+    "cta": { "label": "Meet the mentors", "href": "/mentors" },
+    "stats": [
+      { "value": "200+", "label": "Mentors" },
+      { "value": "120K", "label": "Community" },
+      { "value": "60+", "label": "Episodes" }
+    ]
+  },
+  "values": {
+    "eyebrow": "What we stand for",
+    "title": "Signal over noise",
+    "intro": "A few principles that shape everything we publish."
+  },
+  "valueItems": [
+    { "icon": "spark", "title": "Insight first", "description": "We chase the idea worth knowing, not the headline worth clicking." },
+    { "icon": "mic", "title": "Real conversations", "description": "Unscripted, long-form, and honest — the way good ideas actually surface." },
+    { "icon": "user", "title": "Community-led", "description": "Our best stories come from the people in the room, not just on the stage." },
+    { "icon": "headphones", "title": "Made to revisit", "description": "Every episode and essay is built to hold up months later, not just on launch day." }
+  ],
+  "cta": {
+    "eyebrow": "Join us",
+    "title": "Be part of the next level",
+    "description": "Get new episodes, articles, and live-event invites in your inbox.",
+    "primaryCta": { "label": "Get Started", "href": "/get-started" },
+    "secondaryCta": { "label": "Contact us", "href": "/contact" }
+  }
+}

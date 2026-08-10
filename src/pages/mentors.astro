@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro";
+import PageHero from "../components/sections/PageHero.jsx";
+import ArtistRail from "../components/sections/ArtistRail.jsx";
+import CtaBand from "../components/sections/CtaBand.jsx";
+import mentors from "../components/data/mentors.json";
+
+export const prerender = true;
+---
+
+<BaseLayout
+  title={mentors.meta.title}
+  description={mentors.meta.description}
+  themeColor={mentors.meta.themeColor}
+>
+  <PageHero data={mentors.hero} client:load />
+  <ArtistRail data={mentors.section} items={mentors.mentors} client:visible />
+  <CtaBand data={mentors.cta} client:visible />
+</BaseLayout>

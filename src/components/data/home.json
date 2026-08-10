@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "title": "Next Level Mentors",
+    "description": "Explore the Next Level Show by Mentors — a podcast, show, and articles platform unveiling the future of technology, gadgets, and innovation.",
+    "themeColor": "#0b0d07"
+  },
+  "brandStrip": {
+    "label": "Listen & watch on",
+    "fallback": "your favorite platforms",
+    "brands": [
+      { "id": "spotify", "name": "Spotify", "icon": "spotify" },
+      { "id": "apple", "name": "Apple Podcasts", "icon": "applepodcasts" },
+      { "id": "youtube", "name": "YouTube", "icon": "youtube" },
+      { "id": "soundcloud", "name": "SoundCloud", "icon": "soundcloud" },
+      { "id": "overcast", "name": "Overcast", "icon": "overcast" },
+      { "id": "pocketcasts", "name": "Pocket Casts", "icon": "pocketcasts" },
+      { "id": "x", "name": "X", "icon": "x" }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Upcoming Live Events",
+    "headline": [
+      { "text": "Explore the" },
+      { "text": "Next", "accent": true },
+      { "text": "Level", "accent": true },
+      { "text": "Show by" },
+      { "text": "Mentors" }
+    ],
+    "subline": "Next Level Show by Mentors",
+    "description": "Stay Informed, Stay Ahead: Unveiling the Future of Technology, Gadgets, and Innovation. Your Gateway to the Digital Universe — Where Innovation Meets Insight",
+    "primaryCta": { "label": "Get Started", "href": "/get-started" },
+    "watchCta": { "label": "Watch Shows", "href": "/shows" },
+    "media": { "src": "/img/hero.mp4", "poster": "/img/hero.jpg" },
+    "stat": { "value": "200+", "label": "Best Mentors all over the world" },
+    "avatars": [
+      { "src": "https://i.pravatar.cc/120?img=11", "label": "Aria N." },
+      { "src": "https://i.pravatar.cc/120?img=32", "label": "Liam K." },
+      { "src": "https://i.pravatar.cc/120?img=45", "label": "Sofia R." },
+      { "src": "https://i.pravatar.cc/120?img=58", "label": "Noah B." },
+      { "src": "https://i.pravatar.cc/120?img=15", "label": "Mei L." },
+      { "src": "https://i.pravatar.cc/120?img=22", "label": "Omar D." }
+    ]
+  },
+  "featureStrip": {
+    "highlight": { "value": 120, "suffix": "K", "label": "Women Empowered" },
+    "features": [
+      {
+        "icon": "mic",
+        "title": "Open Mic",
+        "description": "Unveiling the future of technology, live and unscripted."
+      },
+      {
+        "icon": "speaker",
+        "title": "Speaker Sessions",
+        "description": "Deep-dive talks from the people building what's next."
+      }
+    ]
+  },
+  "showsSection": {
+    "eyebrow": "Latest Shows",
+    "title": "Conversations that move the industry forward",
+    "intro": "Long-form video episodes with founders, researchers, and creators shaping the digital universe.",
+    "layout": "rail",
+    "cta": { "label": "See all", "href": "/shows" }
+  },
+  "shows": [
+    {
+      "slug": "future-of-interfaces",
+      "href": "/shows/future-of-interfaces",
+      "kind": "show",
+      "title": "The Future of Interfaces",
+      "subtitle": "Next Level Mentors",
+      "media": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=900&auto=format&fit=crop"
+    },
+    {
+      "slug": "ai-and-creativity",
+      "href": "/shows/ai-and-creativity",
+      "kind": "show",
+      "title": "AI & the New Creative Economy",
+      "subtitle": "Next Level Mentors",
+      "media": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=900&auto=format&fit=crop"
+    },
+    {
+      "slug": "building-in-public",
+      "href": "/shows/building-in-public",
+      "kind": "show",
+      "title": "Building in Public, At Scale",
+      "subtitle": "Next Level Mentors",
+      "media": "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=900&auto=format&fit=crop"
+    },
+    {
+      "slug": "design-systems-2026",
+      "href": "/shows/design-systems-2026",
+      "kind": "show",
+      "title": "Design Systems in 2026",
+      "subtitle": "Next Level Mentors",
+      "media": "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=900&auto=format&fit=crop"
+    },
+    {
+      "slug": "hardware-renaissance",
+      "href": "/shows/hardware-renaissance",
+      "kind": "show",
+      "title": "The Hardware Renaissance",
+      "subtitle": "Next Level Mentors",
+      "media": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=900&auto=format&fit=crop"
+    }
+  ],
+  "podcastSection": {
+    "eyebrow": "On the Podcast",
+    "title": "Audio for the curious builder",
+    "intro": "Short, sharp episodes you can take on a walk.",
+    "layout": "rail",
+    "cta": { "label": "See all", "href": "/podcast" }
+  },
+  "podcast": [
+    {
+      "slug": "shipping-faster",
+      "href": "/podcast/shipping-faster",
+      "kind": "podcast",
+      "title": "Shipping Faster Without Burning Out",
+      "subtitle": "Next Level Mentors · 28 min",
+      "media": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=900&auto=format&fit=crop"
+    },
+    {
+      "slug": "the-mentor-mindset",
+      "href": "/podcast/the-mentor-mindset",
+      "kind": "podcast",
+      "title": "The Mentor Mindset",
+      "subtitle": "Next Level Mentors · 33 min",
+      "media": "https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=900&auto=format&fit=crop"
+    },
+    {
+      "slug": "tools-we-love",
+      "href": "/podcast/tools-we-love",
+      "kind": "podcast",
+      "title": "Tools We Can't Live Without",
+      "subtitle": "Next Level Mentors · 25 min",
+      "media": "https://images.unsplash.com/photo-1589903308904-1010c2294adc?q=80&w=900&auto=format&fit=crop"
+    },
+    {
+      "slug": "remote-by-default",
+      "href": "/podcast/remote-by-default",
+      "kind": "podcast",
+      "title": "Remote by Default",
+      "subtitle": "Next Level Mentors · 31 min",
+      "media": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=900&auto=format&fit=crop"
+    },
+    {
+      "slug": "from-idea-to-launch",
+      "href": "/podcast/from-idea-to-launch",
+      "kind": "podcast",
+      "title": "From Idea to Launch in 30 Days",
+      "subtitle": "Next Level Mentors · 36 min",
+      "media": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=900&auto=format&fit=crop"
+    }
+  ],
+  "masterclassSection": {
+    "eyebrow": "Masterclasses",
+    "title": "Learn from the best, on your time",
+    "intro": "Self-paced sessions led by mentors at the top of their craft.",
+    "align": "left"
+  },
+  "masterclasses": [
+    {
+      "title": "Creative Confidence",
+      "author": "Natasha Rose",
+      "role": "Senior Designer",
+      "href": "/shows",
+      "gradient": "linear-gradient(150deg, #FF8A5B 0%, #FF6FB5 55%, #C86DD7 100%)",
+      "avatar": "https://i.pravatar.cc/200?img=5"
+    },
+    {
+      "title": "Financial Freedom",
+      "author": "Elisa Smith",
+      "role": "Finance Mentor",
+      "href": "/shows",
+      "gradient": "linear-gradient(150deg, #2AF598 0%, #1CB5E0 60%, #4F8DFD 100%)",
+      "avatar": "https://i.pravatar.cc/200?img=20"
+    },
+    {
+      "title": "Business Strategy",
+      "author": "Samantha William",
+      "role": "Growth Lead",
+      "href": "/shows",
+      "gradient": "linear-gradient(150deg, #7B5CFF 0%, #9D50FF 55%, #C86DD7 100%)",
+      "avatar": "https://i.pravatar.cc/200?img=32"
+    }
+  ],
+  "cta": {
+    "eyebrow": "Join the community",
+    "title": "Go to the next level with us",
+    "description": "Get new episodes, articles, and live event invites in your inbox. No noise — just signal.",
+    "primaryCta": { "label": "Get Started", "href": "/get-started" },
+    "secondaryCta": { "label": "Browse Shows", "href": "/shows" }
+  }
+}

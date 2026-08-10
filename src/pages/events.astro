@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro";
+import PageHero from "../components/sections/PageHero.jsx";
+import ContentSection from "../components/sections/ContentSection.jsx";
+import CtaBand from "../components/sections/CtaBand.jsx";
+import events from "../components/data/events.json";
+
+export const prerender = true;
+---
+
+<BaseLayout
+  title={events.meta.title}
+  description={events.meta.description}
+  themeColor={events.meta.themeColor}
+>
+  <PageHero data={events.hero} client:load />
+  <ContentSection data={events.section} items={events.events} client:visible />
+  <CtaBand data={events.cta} client:visible />
+</BaseLayout>

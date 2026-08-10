@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "title": "Mentors",
+    "description": "Meet the Next Level Mentors — founders, researchers, and creators sharing what they've learned building the future.",
+    "themeColor": "#0b0d07"
+  },
+  "hero": {
+    "eyebrow": "The People",
+    "title": "Meet the",
+    "accentWord": "mentors.",
+    "description": "200+ founders, researchers, and creators from across the digital universe — sharing what they've learned the hard way.",
+    "cta": { "label": "Become a mentor", "href": "/contact" },
+    "stats": [
+      { "value": "200+", "label": "Mentors" },
+      { "value": "30+", "label": "Countries" },
+      { "value": "5", "label": "Disciplines" }
+    ]
+  },
+  "section": {
+    "title": "Popular Mentors",
+    "cta": { "label": "See all", "href": "/mentors" }
+  },
+  "mentors": [
+    {
+      "slug": "aria-n",
+      "href": "/mentors",
+      "kind": "show",
+      "category": "Product",
+      "title": "Aria N.",
+      "excerpt": "VP of Product building human-centered AI tools.",
+      "media": "https://i.pravatar.cc/600?img=11"
+    },
+    {
+      "slug": "liam-k",
+      "href": "/mentors",
+      "kind": "show",
+      "category": "Engineering",
+      "title": "Liam K.",
+      "excerpt": "Staff engineer and writer on systems at scale.",
+      "media": "https://i.pravatar.cc/600?img=32"
+    },
+    {
+      "slug": "sofia-r",
+      "href": "/mentors",
+      "kind": "show",
+      "category": "Design",
+      "title": "Sofia R.",
+      "excerpt": "Design lead obsessed with trust and defaults.",
+      "media": "https://i.pravatar.cc/600?img=45"
+    },
+    {
+      "slug": "noah-b",
+      "href": "/mentors",
+      "kind": "show",
+      "category": "Founder",
+      "title": "Noah B.",
+      "excerpt": "Two-time founder building in public.",
+      "media": "https://i.pravatar.cc/600?img=58"
+    },
+    {
+      "slug": "mei-l",
+      "href": "/mentors",
+      "kind": "show",
+      "category": "Research",
+      "title": "Mei L.",
+      "excerpt": "Researcher mapping the future of interfaces.",
+      "media": "https://i.pravatar.cc/600?img=15"
+    },
+    {
+      "slug": "omar-d",
+      "href": "/mentors",
+      "kind": "show",
+      "category": "Hardware",
+      "title": "Omar D.",
+      "excerpt": "Hardware founder shipping atoms at software speed.",
+      "media": "https://i.pravatar.cc/600?img=22"
+    },
+    {
+      "slug": "priya-s",
+      "href": "/mentors",
+      "kind": "show",
+      "category": "Data",
+      "title": "Priya S.",
+      "excerpt": "Data scientist turning models into products.",
+      "media": "https://i.pravatar.cc/600?img=49"
+    },
+    {
+      "slug": "theo-m",
+      "href": "/mentors",
+      "kind": "show",
+      "category": "Growth",
+      "title": "Theo M.",
+      "excerpt": "Growth lead who scaled three startups.",
+      "media": "https://i.pravatar.cc/600?img=68"
+    }
+  ],
+  "cta": {
+    "eyebrow": "Share your craft",
+    "title": "Want to mentor with us?",
+    "description": "We're always looking for builders with a story worth telling.",
+    "primaryCta": { "label": "Apply to mentor", "href": "/contact" },
+    "secondaryCta": { "label": "Browse Shows", "href": "/shows" }
+  }
+}

@@ -1,0 +1,50 @@
+# Copy this file to each template repo at .github/workflows/notify-buyers.yml
+#
+# Required repo secrets:
+#   BUYER_NOTIFY_URL    — https://flux-theme.online/api/webhooks/github-release
+#   BUYER_NOTIFY_SECRET — same value as BUYER_NOTIFY_SECRET on the site
+#
+# Note: drop vs update is auto-detected by the site based on whether this repo
+# has a prior row in the template_releases Supabase table. The tag pattern
+# (v1.0.0, v1.0.1, etc.) does NOT affect classification.
+
+name: Notify buyers on release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send release notification
+        env:
+          BUYER_NOTIFY_URL: ${{ secrets.BUYER_NOTIFY_URL }}
+          BUYER_NOTIFY_SECRET: ${{ secrets.BUYER_NOTIFY_SECRET }}
+          REPO: ${{ github.repository }}
+          TAG: ${{ github.event.release.tag_name }}
+          NOTES: ${{ github.event.release.body }}
+          URL: ${{ github.event.release.html_url }}
+        run: |
+          if [ -z "$BUYER_NOTIFY_URL" ]; then
+            echo "ERROR: BUYER_NOTIFY_URL is empty. Add it in repo Settings → Secrets."
+            exit 1
+          fi
+
+          BUYER_NOTIFY_URL=$(echo -n "$BUYER_NOTIFY_URL" | tr -d '[:space:]')
+
+          PAYLOAD=$(jq -n \
+            --arg repo "$REPO" \
+            --arg version "$TAG" \
+            --arg notes "$NOTES" \
+            --arg url "$URL" \
+            '{repo: $repo, version: $version, notes: $notes, url: $url}')
+
+          SIGNATURE="sha256=$(echo -n "$PAYLOAD" | openssl dgst -sha256 -hmac "$BUYER_NOTIFY_SECRET" | sed 's/^.* //')"
+
+          curl -X POST "$BUYER_NOTIFY_URL" \
+            -H "Content-Type: application/json" \
+            -H "x-signature-256: $SIGNATURE" \
+            -d "$PAYLOAD" \
+            --fail-with-body

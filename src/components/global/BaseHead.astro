@@ -1,0 +1,130 @@
+---
+import "../../styles/global.css";
+
+export interface Props {
+  title?: string;
+  description?: string;
+  url?: string;
+  image?: string;
+  themeColor?: string;
+  type?: string;
+}
+
+const {
+  title = "Next Level Mentors",
+  description = "Next Level Mentors — the show, podcast, and articles unveiling the future of technology, gadgets, and innovation. Your gateway to the digital universe where innovation meets insight.",
+  url = Astro.url.href,
+  image = "/og.jpg",
+  themeColor = "#0b0d07",
+  type = "website",
+} = Astro.props;
+
+const siteOrigin = "https://nextlevelmentors.show";
+const absoluteImageUrl = image.startsWith("http")
+  ? image
+  : `${siteOrigin}${image}`;
+
+const canonicalUrl = (() => {
+  try {
+    const u = new URL(url);
+    u.search = "";
+    u.hash = "";
+    return u.href.replace(/\/$/, "") || u.href;
+  } catch {
+    return url;
+  }
+})();
+
+const hasQueryString = (() => {
+  try {
+    return new URL(url).search.length > 0;
+  } catch {
+    return false;
+  }
+})();
+const robotsContent = hasQueryString ? "noindex, follow" : "index, follow";
+const fullTitle =
+  title === "Next Level Mentors" ? title : `${title} | Next Level Mentors`;
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<meta
+  name="keywords"
+  content="next level mentors, technology podcast, innovation show, tech articles, mentors, live events, speaker sessions"
+/>
+<meta name="author" content="Next Level Mentors" />
+
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+/>
+
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content="Next Level Mentors" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={absoluteImageUrl} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={canonicalUrl} />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={absoluteImageUrl} />
+
+<link rel="canonical" href={canonicalUrl} />
+
+<meta name="robots" content={robotsContent} />
+<meta name="googlebot" content={robotsContent} />
+
+<meta name="theme-color" content={themeColor} />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="generator" content={Astro.generator} />
+
+<script is:inline>
+  (function () {
+    function applyTheme() {
+      try {
+        const stored = localStorage.getItem("nlm-theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        const dark = stored ? stored === "dark" : prefersDark;
+        document.documentElement.classList.toggle("dark", dark);
+      } catch (e) {}
+      document.documentElement.classList.remove("no-js");
+    }
+
+    applyTheme();
+
+    // Astro's ClientRouter (View Transitions) swaps the DOM on navigation
+    // without re-running inline head scripts, which would otherwise drop the
+    // theme class. Re-apply it before the new page paints so the theme
+    // persists across page changes. document-level listeners survive swaps.
+    document.addEventListener("astro:after-swap", applyTheme);
+  })();
+</script>
+
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Next Level Mentors",
+    url: siteOrigin,
+    logo: `${siteOrigin}/logo.svg`,
+    description,
+  })}
+/>

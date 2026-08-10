@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Shows",
+    "description": "Watch the Next Level Mentors shows — long-form video conversations with the people shaping technology and innovation.",
+    "themeColor": "#0b0d07"
+  },
+  "hero": {
+    "eyebrow": "Watch the Show",
+    "title": "Stories you can",
+    "accentWord": "watch.",
+    "description": "Cinematic, long-form conversations with founders, researchers, and creators building the digital universe.",
+    "cta": { "label": "Watch Now", "href": "#all-shows" },
+    "stats": [
+      { "value": "24", "label": "Episodes" },
+      { "value": "8M+", "label": "Views" },
+      { "value": "4K", "label": "Quality" }
+    ]
+  },
+  "section": {
+    "id": "all-shows",
+    "eyebrow": "All Episodes",
+    "title": "Every conversation, in full",
+    "intro": "Stream the complete catalogue of Next Level shows.",
+    "layout": "mosaic"
+  },
+  "shows": [
+    {
+      "slug": "future-of-interfaces",
+      "href": "/shows/future-of-interfaces",
+      "kind": "show",
+      "size": "tall",
+      "title": "Your limitation—it's only your imagination.",
+      "author": "The Future of Interfaces",
+      "media": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+      "slug": "building-in-public",
+      "href": "/shows/building-in-public",
+      "kind": "show",
+      "size": "small",
+      "tone": "light",
+      "color": "#27336b",
+      "title": "Great things never come from comfort zones."
+    },
+    {
+      "slug": "ai-and-creativity",
+      "href": "/shows/ai-and-creativity",
+      "kind": "show",
+      "size": "small",
+      "title": "AI & the New Creative Economy",
+      "media": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      "slug": "design-systems-2026",
+      "href": "/shows/design-systems-2026",
+      "kind": "show",
+      "size": "wide",
+      "title": "Stay Focused.",
+      "action": { "label": "Watch Episode", "href": "/shows/design-systems-2026" },
+      "media": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+      "slug": "hardware-renaissance",
+      "href": "/shows/hardware-renaissance",
+      "kind": "show",
+      "size": "box",
+      "title": "The Hardware Renaissance",
+      "media": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+    }
+  ],
+  "cta": {
+    "eyebrow": "Don't miss an episode",
+    "title": "New shows, straight to you",
+    "description": "Subscribe for premieres, behind-the-scenes clips, and live-event invites.",
+    "primaryCta": { "label": "Get Started", "href": "/get-started" },
+    "secondaryCta": { "label": "Read the Journal", "href": "/articles" }
+  }
+}

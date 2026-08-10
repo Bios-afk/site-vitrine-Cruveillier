@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "Get Started",
+    "description": "Join Next Level Mentors — get new shows, podcasts, articles, and live-event invites in your inbox.",
+    "themeColor": "#0b0d07"
+  },
+  "hero": {
+    "eyebrow": "Get Started",
+    "title": "Join the next",
+    "accentWord": "level.",
+    "description": "Create your free account to follow shows, save episodes, and get live-event invites before anyone else."
+  },
+  "benefits": {
+    "eyebrow": "Why join",
+    "title": "What you get",
+    "intro": "Free to start — upgrade anytime."
+  },
+  "benefitItems": [
+    { "icon": "play", "title": "Full catalogue", "description": "Every show and episode, streamable on any device." },
+    { "icon": "spark", "title": "Early access", "description": "New drops and event invites before the public." },
+    { "icon": "headphones", "title": "Save & follow", "description": "Build your library and pick up where you left off." },
+    { "icon": "user", "title": "Community", "description": "Join 120K builders learning out loud." }
+  ],
+  "form": {
+    "eyebrow": "Create your account",
+    "title": "Start free in seconds",
+    "intro": "No credit card required.",
+    "submitLabel": "Create account",
+    "successNote": "You're in! Check your inbox to confirm your email.",
+    "fields": [
+      { "name": "name", "label": "Name", "type": "text", "required": true },
+      { "name": "email", "label": "Email", "type": "email", "required": true }
+    ]
+  }
+}

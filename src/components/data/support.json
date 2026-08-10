@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "title": "Support",
+    "description": "Help and support for Next Level Mentors — accounts, subscriptions, events, and getting the most from the platform.",
+    "themeColor": "#0b0d07"
+  },
+  "hero": {
+    "eyebrow": "Help Center",
+    "title": "How can we",
+    "accentWord": "help?",
+    "description": "Answers to common questions, plus a direct line to our team when you need a human."
+  },
+  "topics": {
+    "eyebrow": "Browse topics",
+    "title": "Find your answer",
+    "intro": "Pick a category to get started."
+  },
+  "topicItems": [
+    { "icon": "user", "title": "Account & profile", "description": "Sign-in, profile settings, and managing your details.", "href": "/account" },
+    { "icon": "spark", "title": "Subscriptions", "description": "Plans, billing, and changing your subscription." },
+    { "icon": "calendar", "title": "Live events", "description": "Tickets, RSVPs, and event access." },
+    { "icon": "headphones", "title": "Podcast & shows", "description": "Playback, downloads, and where to listen." },
+    { "icon": "search", "title": "Finding content", "description": "Search tips and browsing the catalogue.", "href": "/search" },
+    { "icon": "mic", "title": "Become a mentor", "description": "Applying, recording, and publishing.", "href": "/contact" }
+  ],
+  "cta": {
+    "eyebrow": "Still stuck?",
+    "title": "Talk to a human",
+    "description": "Our team is happy to help with anything the help center didn't cover.",
+    "primaryCta": { "label": "Contact support", "href": "/contact" },
+    "secondaryCta": { "label": "Back to home", "href": "/" }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Terms of Service",
+    "description": "The terms that govern your use of Next Level Mentors.",
+    "themeColor": "#0b0d07"
+  },
+  "page": {
+    "eyebrow": "Legal",
+    "title": "Terms of Service",
+    "updated": "June 1, 2026",
+    "intro": "By using Next Level Mentors you agree to these terms. They're written to be readable — if anything is unclear, just ask.",
+    "sections": [
+      {
+        "heading": "Using the service",
+        "paragraphs": [
+          "You may use Next Level Mentors for your own personal, non-commercial enjoyment. Please don't misuse the service — that includes trying to break it, scrape it at scale, or access it in ways the interface doesn't intend."
+        ]
+      },
+      {
+        "heading": "Your account",
+        "paragraphs": [
+          "You're responsible for keeping your account credentials secure and for activity that happens under your account. Tell us promptly if you suspect unauthorized use."
+        ]
+      },
+      {
+        "heading": "Content",
+        "paragraphs": [
+          "All shows, podcasts, articles, and artwork are owned by Next Level Mentors or our contributors and are protected by copyright. You may share links freely, but please don't redistribute the media itself without permission."
+        ]
+      },
+      {
+        "heading": "Subscriptions",
+        "paragraphs": [
+          "Paid plans renew automatically until cancelled. You can cancel anytime from your account; access continues through the end of the current billing period."
+        ]
+      },
+      {
+        "heading": "Liability",
+        "paragraphs": [
+          "The service is provided \"as is.\" To the fullest extent permitted by law, we aren't liable for indirect or incidental damages arising from your use of it."
+        ]
+      },
+      {
+        "heading": "Contact",
+        "paragraphs": [
+          "Questions about these terms? Reach us at legal@nextlevelmentors.show."
+        ]
+      }
+    ]
+  }
+}

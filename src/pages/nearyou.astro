@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro";
+import PageHero from "../components/sections/PageHero.jsx";
+import FeatureGrid from "../components/sections/FeatureGrid.jsx";
+import CtaBand from "../components/sections/CtaBand.jsx";
+import nearyou from "../components/data/nearyou.json";
+
+export const prerender = true;
+---
+
+<BaseLayout
+  title={nearyou.meta.title}
+  description={nearyou.meta.description}
+  themeColor={nearyou.meta.themeColor}
+>
+  <PageHero data={nearyou.hero} client:load />
+  <FeatureGrid data={nearyou.section} items={nearyou.cityItems} client:visible />
+  <CtaBand data={nearyou.cta} client:visible />
+</BaseLayout>

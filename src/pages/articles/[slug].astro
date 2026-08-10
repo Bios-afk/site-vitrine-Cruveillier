@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../../layout/BaseLayout.astro";
+import MediaDetail from "../../components/sections/MediaDetail.jsx";
+import CtaBand from "../../components/sections/CtaBand.jsx";
+import details from "../../components/data/details.json";
+import articles from "../../components/data/articles.json";
+
+export const prerender = true;
+
+export function getStaticPaths() {
+  return Object.entries(details.articles).map(([slug, item]) => ({
+    params: { slug },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+---
+
+<BaseLayout
+  title={item.title}
+  description={item.excerpt}
+  themeColor={articles.meta.themeColor}
+  type="article"
+  image={typeof item.media === "string" ? item.media : undefined}
+>
+  <MediaDetail item={item} client:load />
+  <CtaBand data={articles.cta} client:visible />
+</BaseLayout>

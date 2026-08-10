@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../../layout/BaseLayout.astro";
+import PageHero from "../../components/sections/PageHero.jsx";
+import ContentSection from "../../components/sections/ContentSection.jsx";
+import CtaBand from "../../components/sections/CtaBand.jsx";
+import articles from "../../components/data/articles.json";
+
+export const prerender = true;
+---
+
+<BaseLayout
+  title={articles.meta.title}
+  description={articles.meta.description}
+  themeColor={articles.meta.themeColor}
+>
+  <PageHero data={articles.hero} client:load />
+  <ContentSection
+    data={articles.section}
+    items={articles.articles}
+    client:visible
+  />
+  <CtaBand data={articles.cta} client:visible />
+</BaseLayout>

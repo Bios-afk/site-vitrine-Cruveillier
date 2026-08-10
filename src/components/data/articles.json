@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Articles",
+    "description": "Essays and field notes from Next Level Mentors on technology, design, and the craft of building.",
+    "themeColor": "#0b0d07"
+  },
+  "hero": {
+    "eyebrow": "The Journal",
+    "title": "Ideas worth",
+    "accentWord": "reading.",
+    "description": "Long-form essays, playbooks, and field notes on technology, design, and the craft of building.",
+    "cta": { "label": "Get Started", "href": "/get-started" },
+    "stats": [
+      { "value": "140+", "label": "Articles" },
+      { "value": "12", "label": "Writers" },
+      { "value": "Weekly", "label": "Cadence" }
+    ]
+  },
+  "section": {
+    "eyebrow": "Latest Writing",
+    "title": "Fresh from the journal",
+    "intro": "The most recent essays and deep dives from our contributors.",
+    "layout": "mosaic"
+  },
+  "articles": [
+    {
+      "slug": "designing-for-trust",
+      "href": "/articles/designing-for-trust",
+      "kind": "article",
+      "size": "tall",
+      "title": "Your limitation—it's only your imagination.",
+      "author": "Designing for Trust",
+      "media": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+      "slug": "the-quiet-power-of-defaults",
+      "href": "/articles/the-quiet-power-of-defaults",
+      "kind": "article",
+      "size": "small",
+      "tone": "light",
+      "color": "#27336b",
+      "title": "Great things never come from comfort zones."
+    },
+    {
+      "slug": "writing-as-thinking",
+      "href": "/articles/writing-as-thinking",
+      "kind": "article",
+      "size": "small",
+      "title": "Dream it. Wish it. Do it.",
+      "media": "https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      "slug": "small-teams-big-leverage",
+      "href": "/articles/small-teams-big-leverage",
+      "kind": "article",
+      "size": "wide",
+      "title": "Stay Focused.",
+      "action": { "label": "Read Article", "href": "/articles/small-teams-big-leverage" },
+      "media": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1400&auto=format&fit=crop"
+    },
+    {
+      "slug": "the-interface-is-the-product",
+      "href": "/articles/the-interface-is-the-product",
+      "kind": "article",
+      "size": "box",
+      "title": "The Interface Is the Product",
+      "media": "https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=1200&auto=format&fit=crop"
+    }
+  ],
+  "cta": {
+    "eyebrow": "Read more, think better",
+    "title": "Get our best essays in your inbox",
+    "description": "One thoughtful piece a week. No spam, unsubscribe anytime.",
+    "primaryCta": { "label": "Subscribe", "href": "/get-started" },
+    "secondaryCta": { "label": "Listen to the Podcast", "href": "/podcast" }
+  }
+}

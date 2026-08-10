@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro";
+import ProsePage from "../components/sections/ProsePage.jsx";
+import terms from "../components/data/terms.json";
+
+export const prerender = true;
+---
+
+<BaseLayout
+  title={terms.meta.title}
+  description={terms.meta.description}
+  themeColor={terms.meta.themeColor}
+>
+  <ProsePage data={terms.page} client:load />
+</BaseLayout>

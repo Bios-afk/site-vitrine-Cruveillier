@@ -1,0 +1,35 @@
+---
+import BaseHead from "../components/global/BaseHead.astro";
+import Navigation from "../components/global/Navigation.jsx";
+import Footer from "../components/global/Footer.jsx";
+import PageTransition from "../components/common/PageTransition.jsx";
+import navData from "../components/data/navigation.json";
+import footerData from "../components/data/footer.json";
+import { ClientRouter } from "astro:transitions";
+
+const { title, description, image, url, themeColor, type } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <BaseHead
+      title={title}
+      description={description}
+      image={image}
+      url={url}
+      themeColor={themeColor}
+      type={type}
+    />
+    <ClientRouter />
+  </head>
+  <body>
+    <Navigation data={navData} client:load transition:persist />
+
+    <PageTransition client:load>
+      <main id="main" transition:animate="none"><slot /></main>
+    </PageTransition>
+
+    <Footer data={footerData} client:visible />
+  </body>
+</html>

@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro";
+import PageHero from "../components/sections/PageHero.jsx";
+import ContactForm from "../components/sections/ContactForm.jsx";
+import FeatureGrid from "../components/sections/FeatureGrid.jsx";
+import CtaBand from "../components/sections/CtaBand.jsx";
+import account from "../components/data/account.json";
+
+export const prerender = true;
+---
+
+<BaseLayout
+  title={account.meta.title}
+  description={account.meta.description}
+  themeColor={account.meta.themeColor}
+>
+  <PageHero data={account.hero} client:load />
+  <ContactForm data={account.form} client:visible />
+  <FeatureGrid data={account.manage} items={account.manageItems} client:visible />
+  <CtaBand data={account.cta} client:visible />
+</BaseLayout>

@@ -1,0 +1,16 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro";
+
+export const prerender = true;
+---
+
+<BaseLayout title="Page not found" description="The page you're looking for doesn't exist.">
+  <section class="nlm-container" style="min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:1rem;padding-top:7rem;">
+    <p class="nlm-eyebrow">Error 404</p>
+    <h1 class="nlm-display" style="font-size:clamp(3rem,10vw,7rem);">Lost the signal</h1>
+    <p style="color:var(--foreground-secondary);max-width:42ch;">
+      The page you're looking for has moved or never existed. Let's get you back on track.
+    </p>
+    <a href="/" class="nlm-btn nlm-btn--accent" style="margin-top:0.5rem;">Back to home</a>
+  </section>
+</BaseLayout>

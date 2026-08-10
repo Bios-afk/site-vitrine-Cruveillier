@@ -1,0 +1,49 @@
+{
+  "brand": "Next Level Mentors",
+  "tagline": "Stay informed, stay ahead. Unveiling the future of technology, gadgets, and innovation — where insight meets ambition.",
+  "newsletter": {
+    "placeholder": "you@email.com",
+    "cta": "Subscribe"
+  },
+  "columns": [
+    {
+      "title": "Explore",
+      "links": [
+        { "label": "Home", "href": "/" },
+        { "label": "Podcast", "href": "/podcast" },
+        { "label": "Articles", "href": "/articles" },
+        { "label": "Shows", "href": "/shows" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About", "href": "/about" },
+        { "label": "Mentors", "href": "/mentors" },
+        { "label": "Live Events", "href": "/events" },
+        { "label": "Contact", "href": "/contact" }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        { "label": "Search", "href": "/search" },
+        { "label": "Stories", "href": "/stories" },
+        { "label": "Near You", "href": "/nearyou" },
+        { "label": "Support", "href": "/support" }
+      ]
+    }
+  ],
+  "social": [
+    { "label": "X", "href": "https://x.com", "icon": "x" },
+    { "label": "YouTube", "href": "https://youtube.com", "icon": "youtube" },
+    { "label": "Spotify", "href": "https://spotify.com", "icon": "spotify" },
+    { "label": "Apple Podcasts", "href": "https://podcasts.apple.com", "icon": "applepodcasts" },
+    { "label": "SoundCloud", "href": "https://soundcloud.com", "icon": "soundcloud" }
+  ],
+  "legal": [
+    { "label": "Privacy", "href": "/privacy" },
+    { "label": "Terms", "href": "/terms" }
+  ],
+  "copyright": "© 2026 Next Level Mentors. All rights reserved."
+}

@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Privacy Policy",
+    "description": "How Next Level Mentors collects, uses, and protects your personal information.",
+    "themeColor": "#0b0d07"
+  },
+  "page": {
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "updated": "June 1, 2026",
+    "intro": "This policy explains what information we collect, how we use it, and the choices you have. We keep it short and human.",
+    "sections": [
+      {
+        "heading": "Information we collect",
+        "paragraphs": [
+          "We collect the information you give us directly — such as your name and email when you create an account or subscribe — and basic technical data like your device type and pages visited, which helps us improve the experience.",
+          "We do not sell your personal information to third parties."
+        ]
+      },
+      {
+        "heading": "How we use it",
+        "paragraphs": [
+          "We use your information to deliver the service: to send the episodes, articles, and event invites you ask for, to keep your account secure, and to understand which content is useful so we can make more of it."
+        ]
+      },
+      {
+        "heading": "Cookies",
+        "paragraphs": [
+          "We use a small number of cookies to remember your preferences (such as light or dark mode) and to measure aggregate traffic. You can clear or block cookies in your browser settings."
+        ]
+      },
+      {
+        "heading": "Your choices",
+        "paragraphs": [
+          "You can update or delete your account at any time, and every email we send includes a one-click unsubscribe. To request a copy or deletion of your data, contact us at privacy@nextlevelmentors.show."
+        ]
+      },
+      {
+        "heading": "Changes",
+        "paragraphs": [
+          "If we update this policy we'll revise the date above and, for material changes, let you know by email or an in-app notice."
+        ]
+      }
+    ]
+  }
+}
