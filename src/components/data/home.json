@@ -163,26 +163,26 @@
   "competences": [
     {
       "title": "Droit des contrats et droit des assurances",
-      "description": "Litiges contractuels, sinistres, refus de garantie : les rapports contractuels et assurantiels génèrent souvent des tensions qui nécessitent un accompagnement juridique rigoureux.",
-      "tags": ["Baux", "Contrats", "Créances", "Conseils précontractuels", "Sinistres"],
+      "description": "Problématiques juridiques rencontrés dans la vie courante de tout particulier ou professionnel",
+      "tags": ["Baux", "Contrats", "Créances", "Conseils précontractuels"],
       "href": "/contact"
     },
     {
-      "title": "Droit immobilier",
-      "description": "Vente, construction, copropriété, troubles de voisinage : les questions immobilières impliquent des enjeux financiers et juridiques majeurs.",
-      "tags": ["Vente immobilière", "Construction", "Copropriété", "Troubles de voisinage"],
+      "title": "Droit Equin",
+      "description": "Problématiques juridiques rencontrés par tous les acteurs du monde du cheval",
+      "tags": ["contrat de location/vente", "responsabilité des dirigeants de centre équestre"],
       "href": "/contact"
     },
     {
-      "title": "Droit de la famille",
-      "description": "Séparation, divorce, autorité parentale, succession : les événements de la vie familiale exigent un accompagnement humain autant que juridique.",
-      "tags": ["Divorce", "Garde d'enfants", "Pension alimentaire", "Succession"],
+      "title": "Droit pénal",
+      "description": "Défense à tous les stades de la procédure pénale pour les auteurs ou les victimes",
+      "tags": ["garde à vue", "Garde d'enfants", "instruction devant les différentes juridictions pénales"],
       "href": "/contact"
     },
     {
-      "title": "Droit du travail",
-      "description": "Licenciement, rupture conventionnelle, harcèlement, contentieux prud'homal : les relations de travail sont sources de litiges qui nécessitent d'être défendu avec fermeté.",
-      "tags": ["Licenciement", "Rupture conventionnelle", "Contentieux prud'homal", "Harcèlement"],
+      "title": "Droit des personnes et de la famille",
+      "description": "Défense et conseil pour l’ensemble des actes de la vie familiale",
+      "tags": ["Pacs", "concubinage", "mariage", "divorce séparation", "pension alimentaire", "adoption", "succession"],
       "href": "/contact"
     }
   ],

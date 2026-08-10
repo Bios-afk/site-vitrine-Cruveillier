@@ -1098,6 +1098,7 @@
 
   .nlm-gcard__body {
     margin-top: auto;
+    flex-grow: 1;
   }
 
   .nlm-gcard__title {

@@ -29,18 +29,22 @@ export default function GradientCards({ data = {}, items = [] }) {
             <Wrapper key={i} href={item.href} className="nlm-gcard group" style={{ background: gradient }}>
               <span className="nlm-gcard__pattern" aria-hidden="true" />
 
-              <div className="nlm-gcard__body">
-                <h3 className="nlm-gcard__title">{item.title}</h3>
-                {item.description && <p className="nlm-gcard__desc">{item.description}</p>}
-                {item.tags?.length > 0 && (
-                  <div className="nlm-gcard__tags">
-                    {item.tags.map((tag, j) => (
-                      <span key={j} className="nlm-gcard__tag">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
+              <div className="nlm-gcard__body flex flex-col justify-between gap-2">
+                <div>
+                  <h3 className="nlm-gcard__title">{item.title}</h3>
+                  {item.description && <p className="nlm-gcard__desc">{item.description}</p>}
+                </div>
+                <div>
+                  {item.tags?.length > 0 && (
+                    <div className="nlm-gcard__tags">
+                      {item.tags.map((tag, j) => (
+                        <span key={j} className="nlm-gcard__tag">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
 
               <div className="nlm-gcard__footer">

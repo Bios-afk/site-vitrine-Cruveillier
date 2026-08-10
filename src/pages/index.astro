@@ -20,15 +20,15 @@ export const prerender = true;
 
   <FeatureStrip data={home.featureStrip} client:visible />
   <!-- <BrandStrip data={home.brandStrip} client:visible /> -->
+  <GradientCards
+    data={home.competencesSection}
+    items={home.competences}
+    client:visible
+  />
   <ContentSection data={home.showsSection} items={home.shows} client:visible />
   <ContentSection
     data={home.podcastSection}
     items={home.podcast}
-    client:visible
-  />
-  <GradientCards
-    data={home.competencesSection}
-    items={home.competences}
     client:visible
   />
   <CtaBand data={home.cta} client:visible />
