@@ -11,8 +11,8 @@ export interface Props {
 }
 
 const {
-  title = "Next Level Mentors",
-  description = "Next Level Mentors — the show, podcast, and articles unveiling the future of technology, gadgets, and innovation. Your gateway to the digital universe where innovation meets insight.",
+  title = "Anaïs Cruveiller",
+  description = "Ecouter, comprendre, défendre telle est la devise du Cabinet d’Avocat Anaïs CRUVEILLER qui vous accueille en plein cœur de Bordeaux.",
   url = Astro.url.href,
   image = "/og.jpg",
   themeColor = "#0b0d07",
@@ -44,7 +44,7 @@ const hasQueryString = (() => {
 })();
 const robotsContent = hasQueryString ? "noindex, follow" : "index, follow";
 const fullTitle =
-  title === "Next Level Mentors" ? title : `${title} | Next Level Mentors`;
+  title === "Anaïs Cruveiller" ? title : `${title} | Anaïs Cruveiller`;
 ---
 
 <meta charset="UTF-8" />
@@ -54,9 +54,9 @@ const fullTitle =
 <meta name="description" content={description} />
 <meta
   name="keywords"
-  content="next level mentors, technology podcast, innovation show, tech articles, mentors, live events, speaker sessions"
+  content="avocat bordeaux, cabinet d'avocat, anaïs cruveiller, conseil juridique, défense, droit"
 />
-<meta name="author" content="Next Level Mentors" />
+<meta name="author" content="Anaïs Cruveiller" />
 
 <link rel="icon" href="/favicon.ico" sizes="32x32" />
 <link rel="icon" type="image/svg+xml" href="/logo.svg" />
@@ -70,7 +70,7 @@ const fullTitle =
 />
 
 <meta property="og:type" content={type} />
-<meta property="og:site_name" content="Next Level Mentors" />
+<meta property="og:site_name" content="Anaïs Cruveiller" />
 <meta property="og:url" content={canonicalUrl} />
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
@@ -122,7 +122,7 @@ const fullTitle =
   set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Next Level Mentors",
+    name: "Anaïs Cruveiller",
     url: siteOrigin,
     logo: `${siteOrigin}/logo.svg`,
     description,

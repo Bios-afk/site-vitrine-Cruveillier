@@ -52,7 +52,7 @@ export default function Hero({ data }) {
         <div style={{ position: "absolute", inset: 0 }}>
           <ProtectedMedia
             src={media}
-            alt={subline || "Next Level Mentors"}
+            alt={subline || "Anaïs Cruveiller"}
             controls={false}
             autoPlay
             imgProps={{ loading: "eager", fetchPriority: "high" }}
@@ -85,7 +85,7 @@ export default function Hero({ data }) {
               </p>
             )}
           </div>
-          
+
           <div className="nlm-hero__top" data-hero-anim>
             {eyebrow && (
               <p className="nlm-hero__eyebrow">

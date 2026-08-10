@@ -3,10 +3,10 @@ import Container from "../common/Container.jsx";
 import Button from "../common/Button.jsx";
 import ThemeToggle from "../common/ThemeToggle.jsx";
 import { getGsap } from "../../lib/gsap-core.js";
-import { Spark, User } from "../common/Icons.jsx";
+import { User } from "../common/Icons.jsx";
 
 export default function Navigation({ data }) {
-  const { brand = "Next Level Mentors", links = [], cta, account } = data || {};
+  const { brand = "Anaïs Cruveiller", links = [], cta, account } = data || {};
   const [scrolled, setScrolled] = useState(false);
   const [path, setPath] = useState("/");
   const [open, setOpen] = useState(false);
@@ -120,7 +120,7 @@ export default function Navigation({ data }) {
     >
       <Container className="flex items-center justify-between gap-4" style={{ height: "4.75rem" }}>
         <a href="/" className="flex items-center gap-2 nlm-nav-brand" style={{ textDecoration: "none", color: "var(--foreground)" }}>
-          <Spark size={26} className="nlm-accent-text" />
+          <img src="/logo.svg" alt="" width={52} height={52} style={{ borderRadius: "8px" }} />
           <span style={{ fontWeight: 700, letterSpacing: "-0.01em", fontSize: "1.05rem" }}>{brand}</span>
         </a>
 

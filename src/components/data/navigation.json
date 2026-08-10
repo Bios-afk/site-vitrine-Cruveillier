@@ -1,11 +1,10 @@
 {
-  "brand": "Next Level Mentors",
+  "brand": "Anaïs Cruveiller",
   "links": [
     { "label": "Home", "href": "/" },
     { "label": "Podcast", "href": "/podcast" },
     { "label": "Articles", "href": "/articles" },
     { "label": "Shows", "href": "/shows" }
   ],
-  "account": { "label": "Account", "href": "/account" },
-  "cta": { "label": "Get Started", "href": "/get-started" }
+  "cta": { "label": "Services", "href": "/services" }
 }

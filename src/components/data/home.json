@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Next Level Mentors",
-    "description": "Explore the Next Level Show by Mentors — a podcast, show, and articles platform unveiling the future of technology, gadgets, and innovation.",
+    "title": "Anaïs Cruveiller",
+    "description": "Ecouter, comprendre, défendre telle est la devise du Cabinet d’Avocat Anaïs CRUVEILLER qui vous accueille en plein cœur de Bordeaux.",
     "themeColor": "#0b0d07"
   },
   "brandStrip": {
@@ -21,38 +21,38 @@
     "eyebrow": "",
     "headline": [
       { "text": "Cabinet d’Avocat" },
-      { "text": "Anaïs CRUVEILLER", "accent": true },
-      { "text": "", "accent": true },
-      { "text": "" },
-      { "text": "" }
+      { "text": "Anaïs CRUVEILLER", "accent": true }
     ],
-    "subline": "",
     "description": "Ecouter, comprendre, défendre telle est la devise du Cabinet d’Avocat Anaïs CRUVEILLER qui vous accueille en plein cœur de Bordeaux.",
     "primaryCta": { "label": "Services", "href": "/get-started" },
     "watchCta": { "label": "Watch Shows", "href": "/shows" },
-    "media": { "src": "/img/hero.mp4", "poster": "/img/hero.jpg" },
-    "stat": { "value": "200+", "label": "Best Mentors all over the world" },
-    "avatars": [
-      { "src": "https://i.pravatar.cc/120?img=11", "label": "Aria N." },
-      { "src": "https://i.pravatar.cc/120?img=32", "label": "Liam K." },
-      { "src": "https://i.pravatar.cc/120?img=45", "label": "Sofia R." },
-      { "src": "https://i.pravatar.cc/120?img=58", "label": "Noah B." },
-      { "src": "https://i.pravatar.cc/120?img=15", "label": "Mei L." },
-      { "src": "https://i.pravatar.cc/120?img=22", "label": "Omar D." }
-    ]
+    "media": { "src": "/img/hero.jpg", "poster": "/img/hero.jpg" },
+    "stat": { "value": "200+", "label": "Best Mentors all over the world" }
   },
   "featureStrip": {
-    "highlight": { "value": 120, "suffix": "K", "label": "Women Empowered" },
     "features": [
       {
-        "icon": "mic",
-        "title": "Open Mic",
-        "description": "Unveiling the future of technology, live and unscripted."
+        "icon": "clock",
+        "title": "Efficacité",
+        "description": [
+          "-une réponse rapide sur la problématique juridique",
+          "-une réponse argumentée",
+          "-une mise en mouvement réactive des procédures"
+        ]
       },
       {
-        "icon": "speaker",
-        "title": "Speaker Sessions",
-        "description": "Deep-dive talks from the people building what's next."
+        "icon": "scales",
+        "title": "Rigueur",
+        "description": [
+          "-maîtrise des procédures",
+          "-informations sur les différentes étapes de la procédure",
+          "-mise à jour quant aux évolutions jurisprudentielles et législatives"
+        ]
+      },
+      {
+        "icon": "bubble-chat-user",
+        "title": "Proximité",
+        "description": ["-un seul interlocuteur privilégié", "-une écoute personnalisée", "-plus qu'une problématique juridique, une prise en compte du facteur humain"]
       }
     ]
   },
