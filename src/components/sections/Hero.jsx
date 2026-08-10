@@ -69,19 +69,6 @@ export default function Hero({ data }) {
         </div>
 
         <div className="nlm-hero__content">
-          <div className="nlm-hero__top" data-hero-anim>
-            {eyebrow && (
-              <p className="nlm-hero__eyebrow">
-                {eyebrow}
-                <Spark size={15} className="nlm-accent-text" style={{ flexShrink: 0, marginTop: "0.1rem" }} />
-              </p>
-            )}
-            {primaryCta && (
-              <Button href={primaryCta.href} variant="accent" style={{ fontWeight: 700 }}>
-                {primaryCta.label}
-              </Button>
-            )}
-          </div>
 
           <div className="nlm-hero__middle">
             <h1 className="nlm-display nlm-hero__title" data-hero-anim>
@@ -98,8 +85,22 @@ export default function Hero({ data }) {
               </p>
             )}
           </div>
+          
+          <div className="nlm-hero__top" data-hero-anim>
+            {eyebrow && (
+              <p className="nlm-hero__eyebrow">
+                {eyebrow}
+                <Spark size={15} className="nlm-accent-text" style={{ flexShrink: 0, marginTop: "0.1rem" }} />
+              </p>
+            )}
+            {primaryCta && (
+              <Button href={primaryCta.href} variant="accent" style={{ fontWeight: 700 }}>
+                {primaryCta.label}
+              </Button>
+            )}
+          </div>
 
-          <div className="nlm-hero__bottom">
+          {/* <div className="nlm-hero__bottom">
             {stat && (
               <div className="nlm-hero__stat" data-hero-anim>
                 <div>
@@ -123,7 +124,7 @@ export default function Hero({ data }) {
                 <span style={{ textShadow: "0 1px 10px rgba(0,0,0,0.5)" }}>{watchCta.label}</span>
               </a>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

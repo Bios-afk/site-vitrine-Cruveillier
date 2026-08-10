@@ -18,17 +18,17 @@
     ]
   },
   "hero": {
-    "eyebrow": "Upcoming Live Events",
+    "eyebrow": "",
     "headline": [
-      { "text": "Explore the" },
-      { "text": "Next", "accent": true },
-      { "text": "Level", "accent": true },
-      { "text": "Show by" },
-      { "text": "Mentors" }
+      { "text": "Cabinet d’Avocat" },
+      { "text": "Anaïs CRUVEILLER", "accent": true },
+      { "text": "", "accent": true },
+      { "text": "" },
+      { "text": "" }
     ],
-    "subline": "Next Level Show by Mentors",
-    "description": "Stay Informed, Stay Ahead: Unveiling the Future of Technology, Gadgets, and Innovation. Your Gateway to the Digital Universe — Where Innovation Meets Insight",
-    "primaryCta": { "label": "Get Started", "href": "/get-started" },
+    "subline": "",
+    "description": "Ecouter, comprendre, défendre telle est la devise du Cabinet d’Avocat Anaïs CRUVEILLER qui vous accueille en plein cœur de Bordeaux.",
+    "primaryCta": { "label": "Services", "href": "/get-started" },
     "watchCta": { "label": "Watch Shows", "href": "/shows" },
     "media": { "src": "/img/hero.mp4", "poster": "/img/hero.jpg" },
     "stat": { "value": "200+", "label": "Best Mentors all over the world" },
