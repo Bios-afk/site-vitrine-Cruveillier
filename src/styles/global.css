@@ -1101,61 +1101,62 @@
   }
 
   .nlm-gcard__title {
-    font-weight: 800;
-    line-height: 1.02;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.005em;
+    font-size: clamp(1.2rem, 2.1vw, 1.5rem);
     text-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
   }
 
-  .nlm-gcard__meta {
-    margin-top: 0.9rem;
+  .nlm-gcard__desc {
+    margin-top: 0.65rem;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.86);
+  }
+
+  .nlm-gcard__tags {
+    margin-top: 1rem;
     display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
+    flex-wrap: wrap;
+    gap: 0.4rem;
   }
-  .nlm-gcard__author {
+
+  .nlm-gcard__tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 0.65rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.72rem;
     font-weight: 600;
-    font-size: 0.95rem;
-  }
-  .nlm-gcard__role {
-    font-size: 0.82rem;
-    color: rgba(255, 255, 255, 0.72);
+    letter-spacing: 0.01em;
+    color: #fff;
+    background: color-mix(in oklab, white 16%, transparent);
+    border: 1px solid color-mix(in oklab, white 24%, transparent);
+    backdrop-filter: blur(6px);
   }
 
   .nlm-gcard__footer {
     margin-top: 1.5rem;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
   }
 
-  .nlm-gcard__play {
+  .nlm-gcard__arrow {
     display: grid;
     place-items: center;
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.92);
     color: #16181f;
     box-shadow: 0 10px 22px -10px rgba(0, 0, 0, 0.45);
     transition: transform 0.3s var(--ease-out), background-color 0.25s ease;
   }
-  .nlm-gcard:hover .nlm-gcard__play {
-    transform: scale(1.08);
+  .nlm-gcard:hover .nlm-gcard__arrow {
+    transform: scale(1.08) translate(2px, -2px);
     background: #fff;
-  }
-
-  .nlm-gcard__avatar {
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 0.85rem;
-    overflow: hidden;
-    border: 2px solid rgba(255, 255, 255, 0.7);
-    box-shadow: 0 10px 24px -10px rgba(0, 0, 0, 0.45);
-    flex-shrink: 0;
   }
 
   .nlm-mosaic {
