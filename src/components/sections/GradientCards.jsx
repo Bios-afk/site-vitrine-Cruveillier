@@ -1,14 +1,13 @@
 import Container from "../common/Container.jsx";
 import SectionHeading from "../common/SectionHeading.jsx";
-import ProtectedMedia from "../common/ProtectedMedia.jsx";
 import Stagger from "../common/Stagger.jsx";
-import { Play } from "../common/Icons.jsx";
+import { ArrowUpRight } from "../common/Icons.jsx";
 
 const FALLBACK_GRADIENTS = [
-  "linear-gradient(150deg, #FF8A5B 0%, #FF6FB5 55%, #C86DD7 100%)",
-  "linear-gradient(150deg, #2AF598 0%, #1CB5E0 60%, #4F8DFD 100%)",
-  "linear-gradient(150deg, #7B5CFF 0%, #9D50FF 55%, #C86DD7 100%)",
-  "linear-gradient(150deg, #FBAB7E 0%, #F7CE68 100%)",
+  "linear-gradient(150deg, #2f2a1a 0%, #4a3d20 55%, #6b5226 100%)",
+  "linear-gradient(150deg, #1c2412 0%, #2a3319 55%, #3d4a26 100%)",
+  "linear-gradient(150deg, #241f14 0%, #3a2f1c 55%, #8a6a2e 100%)",
+  "linear-gradient(150deg, #221f1a 0%, #33302a 55%, #4a4438 100%)",
 ];
 
 export default function GradientCards({ data = {}, items = [] }) {
@@ -32,21 +31,22 @@ export default function GradientCards({ data = {}, items = [] }) {
 
               <div className="nlm-gcard__body">
                 <h3 className="nlm-gcard__title">{item.title}</h3>
-                <div className="nlm-gcard__meta">
-                  {item.author && <span className="nlm-gcard__author">{item.author}</span>}
-                  {item.role && <span className="nlm-gcard__role">{item.role}</span>}
-                </div>
+                {item.description && <p className="nlm-gcard__desc">{item.description}</p>}
+                {item.tags?.length > 0 && (
+                  <div className="nlm-gcard__tags">
+                    {item.tags.map((tag, j) => (
+                      <span key={j} className="nlm-gcard__tag">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
 
               <div className="nlm-gcard__footer">
-                <span className="nlm-gcard__play" aria-hidden="true">
-                  <Play size={18} />
+                <span className="nlm-gcard__arrow" aria-hidden="true">
+                  <ArrowUpRight size={18} />
                 </span>
-                {item.avatar && (
-                  <span className="nlm-gcard__avatar">
-                    <ProtectedMedia src={item.avatar} alt={item.author || item.title} controls={false} autoPlay={false} />
-                  </span>
-                )}
               </div>
             </Wrapper>
           );
