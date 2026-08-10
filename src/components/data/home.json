@@ -154,36 +154,36 @@
       "media": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=900&auto=format&fit=crop"
     }
   ],
-  "masterclassSection": {
-    "eyebrow": "Masterclasses",
-    "title": "Learn from the best, on your time",
-    "intro": "Self-paced sessions led by mentors at the top of their craft.",
+  "competencesSection": {
+    "eyebrow": "Compétences",
+    "title": "Des solutions concrètes à vos problématiques juridiques",
+    "intro": "Quatre domaines d'intervention pour accompagner particuliers et professionnels.",
     "align": "left"
   },
-  "masterclasses": [
+  "competences": [
     {
-      "title": "Creative Confidence",
-      "author": "Natasha Rose",
-      "role": "Senior Designer",
-      "href": "/shows",
-      "gradient": "linear-gradient(150deg, #FF8A5B 0%, #FF6FB5 55%, #C86DD7 100%)",
-      "avatar": "https://i.pravatar.cc/200?img=5"
+      "title": "Droit des contrats et droit des assurances",
+      "description": "Litiges contractuels, sinistres, refus de garantie : les rapports contractuels et assurantiels génèrent souvent des tensions qui nécessitent un accompagnement juridique rigoureux.",
+      "tags": ["Baux", "Contrats", "Créances", "Conseils précontractuels", "Sinistres"],
+      "href": "/contact"
     },
     {
-      "title": "Financial Freedom",
-      "author": "Elisa Smith",
-      "role": "Finance Mentor",
-      "href": "/shows",
-      "gradient": "linear-gradient(150deg, #2AF598 0%, #1CB5E0 60%, #4F8DFD 100%)",
-      "avatar": "https://i.pravatar.cc/200?img=20"
+      "title": "Droit immobilier",
+      "description": "Vente, construction, copropriété, troubles de voisinage : les questions immobilières impliquent des enjeux financiers et juridiques majeurs.",
+      "tags": ["Vente immobilière", "Construction", "Copropriété", "Troubles de voisinage"],
+      "href": "/contact"
     },
     {
-      "title": "Business Strategy",
-      "author": "Samantha William",
-      "role": "Growth Lead",
-      "href": "/shows",
-      "gradient": "linear-gradient(150deg, #7B5CFF 0%, #9D50FF 55%, #C86DD7 100%)",
-      "avatar": "https://i.pravatar.cc/200?img=32"
+      "title": "Droit de la famille",
+      "description": "Séparation, divorce, autorité parentale, succession : les événements de la vie familiale exigent un accompagnement humain autant que juridique.",
+      "tags": ["Divorce", "Garde d'enfants", "Pension alimentaire", "Succession"],
+      "href": "/contact"
+    },
+    {
+      "title": "Droit du travail",
+      "description": "Licenciement, rupture conventionnelle, harcèlement, contentieux prud'homal : les relations de travail sont sources de litiges qui nécessitent d'être défendu avec fermeté.",
+      "tags": ["Licenciement", "Rupture conventionnelle", "Contentieux prud'homal", "Harcèlement"],
+      "href": "/contact"
     }
   ],
   "cta": {
