@@ -182,24 +182,28 @@
   },
   "competences": [
     {
+      "badge": "Contrats",
       "title": "Droit des contrats et droit des assurances",
       "description": "Problématiques juridiques rencontrés dans la vie courante de tout particulier ou professionnel",
       "tags": ["Baux", "Contrats", "Créances", "Conseils précontractuels"],
       "href": "/contact"
     },
     {
+      "badge": "Équin",
       "title": "Droit Equin",
       "description": "Problématiques juridiques rencontrés par tous les acteurs du monde du cheval",
       "tags": ["contrat de location/vente", "responsabilité des dirigeants de centre équestre"],
       "href": "/contact"
     },
     {
+      "badge": "Pénal",
       "title": "Droit pénal",
       "description": "Défense à tous les stades de la procédure pénale pour les auteurs ou les victimes",
       "tags": ["garde à vue", "Garde d'enfants", "instruction devant les différentes juridictions pénales"],
       "href": "/contact"
     },
     {
+      "badge": "Famille",
       "title": "Droit des personnes et de la famille",
       "description": "Défense et conseil pour l’ensemble des actes de la vie familiale",
       "tags": ["Pacs", "concubinage", "mariage", "divorce séparation", "pension alimentaire", "adoption", "succession"],
