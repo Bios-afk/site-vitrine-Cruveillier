@@ -31,5 +31,9 @@ const { title, description, image, url, themeColor, type } = Astro.props;
     </PageTransition>
 
     <Footer data={footerData} client:visible />
+
+    <script>
+      import "../lib/anchor-scroll.js";
+    </script>
   </body>
 </html>
