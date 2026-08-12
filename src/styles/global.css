@@ -295,6 +295,19 @@
     color: var(--on-hero);
   }
 
+  .nlm-pullquote {
+    margin: 0;
+    margin-top: 1.25rem;
+    padding-left: 1.1rem;
+    border-left: 3px solid var(--accent);
+    font-size: 1.15rem;
+    line-height: 1.55;
+    color: var(--foreground);
+  }
+  .nlm-pullquote + .nlm-pullquote {
+    margin-top: 1rem;
+  }
+
   .nlm-media {
     position: relative;
     width: 100%;
