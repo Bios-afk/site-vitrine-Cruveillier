@@ -112,13 +112,20 @@ export default function Navigation({ data }) {
         insetInline: 0,
         top: 0,
         zIndex: 50,
-        transition: "background-color 0.3s ease, box-shadow 0.3s ease",
-        backgroundColor: scrolled ? "color-mix(in oklab, var(--background) 82%, transparent)" : "transparent",
-        backdropFilter: scrolled ? "blur(12px)" : "none",
-        borderBottom: scrolled ? "1px solid var(--border)" : "1px solid transparent",
       }}
     >
-      <Container className="flex items-center justify-between gap-4" style={{ height: "4.75rem" }}>
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          inset: 0,
+          transition: "background-color 0.3s ease, box-shadow 0.3s ease",
+          backgroundColor: scrolled ? "color-mix(in oklab, var(--background) 82%, transparent)" : "transparent",
+          backdropFilter: scrolled ? "blur(12px)" : "none",
+          borderBottom: scrolled ? "1px solid var(--border)" : "1px solid transparent",
+        }}
+      />
+      <Container className="flex items-center justify-between gap-4" style={{ height: "4.75rem", position: "relative" }}>
         <a href="/" className="flex items-center gap-2 nlm-nav-brand" style={{ textDecoration: "none", color: "var(--foreground)" }}>
           <img src="/logo.svg" alt="" width={52} height={52} style={{ borderRadius: "8px" }} />
           <span style={{ fontWeight: 700, letterSpacing: "-0.01em", fontSize: "1.05rem" }}>{brand}</span>
