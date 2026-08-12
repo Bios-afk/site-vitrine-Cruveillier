@@ -84,7 +84,7 @@
   --radius-pill: var(--radius-pill);
 
   --font-sans:
-    "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    var(--font-poppins), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 @layer base {
