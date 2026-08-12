@@ -27,13 +27,11 @@ export default function PresentationBand({ data }) {
           className="nlm-split"
           style={{ "--split-cols": "1fr 1.1fr", "--split-align": "stretch", gap: 0 }}
         >
-          {image && (
+          {image?.src && (
             <div style={{ position: "relative", minHeight: "22rem" }}>
-              <ProtectedMedia
-                src={image}
-                alt={image.alt}
-                imgProps={{ loading: "lazy", style: { position: "absolute", inset: 0 } }}
-              />
+              <div style={{ position: "absolute", inset: 0 }}>
+                <ProtectedMedia src={image} />
+              </div>
             </div>
           )}
 
