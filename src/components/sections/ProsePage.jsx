@@ -27,7 +27,7 @@ export default function ProsePage({ data = {} }) {
         </h1>
         {updated && (
           <p style={{ marginTop: "0.75rem", color: "var(--foreground-muted)", fontSize: "0.9rem" }}>
-            Last updated {updated}
+            Dernière mise à jour : {updated}
           </p>
         )}
         {intro && (

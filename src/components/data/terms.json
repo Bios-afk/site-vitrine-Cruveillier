@@ -1,49 +1,58 @@
 {
   "meta": {
-    "title": "Terms of Service",
-    "description": "The terms that govern your use of Next Level Mentors.",
+    "title": "Mentions légales",
+    "description": "Mentions légales du site du Cabinet d'Avocat Anaïs CRUVEILLER — éditeur, hébergeur, propriété intellectuelle.",
     "themeColor": "#0b0d07"
   },
   "page": {
-    "eyebrow": "Legal",
-    "title": "Terms of Service",
-    "updated": "June 1, 2026",
-    "intro": "By using Next Level Mentors you agree to these terms. They're written to be readable — if anything is unclear, just ask.",
+    "eyebrow": "Légal",
+    "title": "Mentions légales",
+    "updated": "12 août 2026",
+    "intro": "Mentions légales du site du Cabinet d'Avocat Anaïs CRUVEILLER.",
     "sections": [
       {
-        "heading": "Using the service",
+        "heading": "Éditeur du site",
         "paragraphs": [
-          "You may use Next Level Mentors for your own personal, non-commercial enjoyment. Please don't misuse the service — that includes trying to break it, scrape it at scale, or access it in ways the interface doesn't intend."
+          "Cabinet A. CRUVEILLER – Avocat",
+          "Maître Anaïs CRUVEILLER, Avocat au Barreau de Bordeaux",
+          "Adresse : 55 rue du Quai Bourgeois, 33000 Bordeaux",
+          "Téléphone : 05 35 54 61 91",
+          "Email : avocat.cruveiller@gmail.com"
         ]
       },
       {
-        "heading": "Your account",
+        "heading": "Profession réglementée",
         "paragraphs": [
-          "You're responsible for keeping your account credentials secure and for activity that happens under your account. Tell us promptly if you suspect unauthorized use."
+          "Maître Anaïs CRUVEILLER est avocat inscrite au Barreau de Bordeaux.",
+          "Ordre des Avocats de Bordeaux — Maison de l'Avocat, 1 rue de Cursol – CS 41108, 33074 Bordeaux Cedex. Tél : 05 56 44 50 06. Site : www.avocats-bordeaux.com",
+          "La profession d'avocat est réglementée par la loi n° 71-1130 du 31 décembre 1971 et le décret n° 91-1197 du 27 novembre 1991. L'avocat est soumis aux règles du Règlement Intérieur National (RIN) de la profession d'avocat."
         ]
       },
       {
-        "heading": "Content",
+        "heading": "Hébergeur",
         "paragraphs": [
-          "All shows, podcasts, articles, and artwork are owned by Next Level Mentors or our contributors and are protected by copyright. You may share links freely, but please don't redistribute the media itself without permission."
+          "Informations en cours de vérification, à confirmer avant mise en ligne définitive (hébergeur pressenti : o2switch — SARL au capital de 100 000 €, RCS Clermont-Ferrand, SIRET 510 909 807 00024, Chemin des Pardiaux, 63000 Clermont-Ferrand, www.o2switch.fr)."
         ]
       },
       {
-        "heading": "Subscriptions",
+        "heading": "Propriété intellectuelle",
         "paragraphs": [
-          "Paid plans renew automatically until cancelled. You can cancel anytime from your account; access continues through the end of the current billing period."
+          "L'ensemble du contenu de ce site (textes, images, graphismes, logo, icônes, etc.) est la propriété exclusive du Cabinet Anaïs CRUVEILLER, à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.",
+          "Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans l'accord exprès par écrit du Cabinet Anaïs CRUVEILLER."
         ]
       },
       {
-        "heading": "Liability",
+        "heading": "Limitation de responsabilité",
         "paragraphs": [
-          "The service is provided \"as is.\" To the fullest extent permitted by law, we aren't liable for indirect or incidental damages arising from your use of it."
+          "Les informations contenues sur ce site sont données à titre informatif et ne sauraient constituer un conseil juridique. Chaque situation étant unique, seule une consultation permet d'analyser votre cas particulier.",
+          "Le Cabinet Anaïs CRUVEILLER ne saurait être tenu responsable des dommages directs ou indirects résultant de l'utilisation des informations contenues sur ce site."
         ]
       },
       {
-        "heading": "Contact",
+        "heading": "Crédits",
         "paragraphs": [
-          "Questions about these terms? Reach us at legal@nextlevelmentors.show."
+          "Conception et développement : Cabinet Anaïs CRUVEILLER et Félix KORBENDAU — Développement web.",
+          "Photographies : droits réservés."
         ]
       }
     ]

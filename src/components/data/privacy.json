@@ -1,44 +1,44 @@
 {
   "meta": {
-    "title": "Privacy Policy",
-    "description": "How Next Level Mentors collects, uses, and protects your personal information.",
+    "title": "Politique de confidentialité",
+    "description": "Politique de confidentialité et protection des données personnelles du site du Cabinet d'Avocat Anaïs CRUVEILLER.",
     "themeColor": "#0b0d07"
   },
   "page": {
-    "eyebrow": "Legal",
-    "title": "Privacy Policy",
-    "updated": "June 1, 2026",
-    "intro": "This policy explains what information we collect, how we use it, and the choices you have. We keep it short and human.",
+    "eyebrow": "Légal",
+    "title": "Politique de confidentialité",
+    "updated": "12 août 2026",
+    "intro": "Cette page explique comment vos données personnelles sont collectées, utilisées et protégées, conformément au RGPD.",
     "sections": [
       {
-        "heading": "Information we collect",
+        "heading": "Protection des données personnelles",
         "paragraphs": [
-          "We collect the information you give us directly — such as your name and email when you create an account or subscribe — and basic technical data like your device type and pages visited, which helps us improve the experience.",
-          "We do not sell your personal information to third parties."
+          "Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition aux données personnelles vous concernant."
         ]
       },
       {
-        "heading": "How we use it",
+        "heading": "Données collectées",
         "paragraphs": [
-          "We use your information to deliver the service: to send the episodes, articles, and event invites you ask for, to keep your account secure, and to understand which content is useful so we can make more of it."
+          "Les données personnelles collectées sur ce site proviennent uniquement du formulaire de contact et de la prise de rendez-vous en ligne.",
+          "Ces données sont utilisées uniquement pour répondre à vos demandes et assurer le suivi de votre dossier. Elles ne sont jamais cédées à des tiers."
+        ]
+      },
+      {
+        "heading": "Responsable du traitement",
+        "paragraphs": [
+          "Maître Anaïs CRUVEILLER — avocat.cruveiller@gmail.com"
+        ]
+      },
+      {
+        "heading": "Exercer vos droits",
+        "paragraphs": [
+          "Pour exercer vos droits d'accès, de rectification ou de suppression, vous pouvez nous contacter par email à avocat.cruveiller@gmail.com ou par courrier à l'adresse du cabinet. Vous disposez également du droit d'introduire une réclamation auprès de la CNIL (www.cnil.fr)."
         ]
       },
       {
         "heading": "Cookies",
         "paragraphs": [
-          "We use a small number of cookies to remember your preferences (such as light or dark mode) and to measure aggregate traffic. You can clear or block cookies in your browser settings."
-        ]
-      },
-      {
-        "heading": "Your choices",
-        "paragraphs": [
-          "You can update or delete your account at any time, and every email we send includes a one-click unsubscribe. To request a copy or deletion of your data, contact us at privacy@nextlevelmentors.show."
-        ]
-      },
-      {
-        "heading": "Changes",
-        "paragraphs": [
-          "If we update this policy we'll revise the date above and, for material changes, let you know by email or an in-app notice."
+          "Ce site n'utilise aucun cookie nécessitant votre consentement préalablement à leur dépôt. Aucun cookie publicitaire, de mesure d'audience ou de tracking n'est utilisé."
         ]
       }
     ]
