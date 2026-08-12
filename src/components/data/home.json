@@ -56,6 +56,26 @@
       }
     ]
   },
+  "presentationSection": {
+    "eyebrow": "Le cabinet",
+    "title": "Présentation du cabinet",
+    "image": {
+      "src": "/img/hero.jpg",
+      "alt": "Le Cabinet d'Avocat Anaïs Cruveiller à Bordeaux"
+    },
+    "paragraphsBefore": [
+      "Ecouter, comprendre, défendre telle est la devise du Cabinet d'Avocat Anaïs CRUVEILLER qui vous accueille en plein cœur de Bordeaux.",
+      "Soucieux d'apporter des réponses adéquates à vos différentes problématiques, le Cabinet n'hésite pas à s'adapter à vos différents besoins :"
+    ],
+    "badges": [
+      { "icon": "clock", "text": "Des rendez-vous adaptés à vos contraintes professionnelles (horaires, déplacements)." },
+      { "icon": "location", "text": "Des rendez-vous adaptés à votre situation géographique." }
+    ],
+    "paragraphsAfter": [
+      "Maître Anaïs CRUVEILLER a choisi d'exercer en structure individuelle afin de pouvoir être au plus près de ses clients. Pour autant, elle n'hésite pas à s'adjoindre en cas de besoins les services de professionnels spécialisés.",
+      "Fort de son dynamisme et de son souhait de rendre accessible à tous les différentes problématiques juridiques, le Cabinet d'Avocat Anaïs CRUVEILLER saura défendre vos intérêts et vous apporter des réponses pertinentes et argumentées."
+    ]
+  },
   "showsSection": {
     "eyebrow": "Latest Shows",
     "title": "Conversations that move the industry forward",
