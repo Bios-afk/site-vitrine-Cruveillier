@@ -190,6 +190,7 @@
     }
   ],
   "competencesSection": {
+    "id": "competences",
     "eyebrow": "Compétences",
     "title": "Des solutions concrètes à vos problématiques juridiques",
     "intro": "Quatre domaines d'intervention pour accompagner particuliers et professionnels.",

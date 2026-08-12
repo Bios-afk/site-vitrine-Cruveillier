@@ -1,49 +1,20 @@
 {
-  "brand": "Next Level Mentors",
-  "tagline": "Stay informed, stay ahead. Unveiling the future of technology, gadgets, and innovation — where insight meets ambition.",
-  "newsletter": {
-    "placeholder": "you@email.com",
-    "cta": "Subscribe"
-  },
+  "brand": "Anaïs Cruveiller",
+  "tagline": "Ecouter, comprendre, défendre telle est la devise du Cabinet d'Avocat Anaïs CRUVEILLER qui vous accueille en plein cœur de Bordeaux.",
   "columns": [
     {
-      "title": "Explore",
+      "title": "Le cabinet",
       "links": [
-        { "label": "Home", "href": "/" },
-        { "label": "Podcast", "href": "/podcast" },
-        { "label": "Articles", "href": "/articles" },
-        { "label": "Shows", "href": "/shows" }
-      ]
-    },
-    {
-      "title": "Company",
-      "links": [
-        { "label": "About", "href": "/about" },
-        { "label": "Mentors", "href": "/mentors" },
-        { "label": "Live Events", "href": "/events" },
+        { "label": "Accueil", "href": "/" },
+        { "label": "Compétences", "href": "/#competences" },
         { "label": "Contact", "href": "/contact" }
-      ]
-    },
-    {
-      "title": "Resources",
-      "links": [
-        { "label": "Search", "href": "/search" },
-        { "label": "Stories", "href": "/stories" },
-        { "label": "Near You", "href": "/nearyou" },
-        { "label": "Support", "href": "/support" }
       ]
     }
   ],
-  "social": [
-    { "label": "X", "href": "https://x.com", "icon": "x" },
-    { "label": "YouTube", "href": "https://youtube.com", "icon": "youtube" },
-    { "label": "Spotify", "href": "https://spotify.com", "icon": "spotify" },
-    { "label": "Apple Podcasts", "href": "https://podcasts.apple.com", "icon": "applepodcasts" },
-    { "label": "SoundCloud", "href": "https://soundcloud.com", "icon": "soundcloud" }
-  ],
+  "social": [],
   "legal": [
-    { "label": "Privacy", "href": "/privacy" },
-    { "label": "Terms", "href": "/terms" }
+    { "label": "Mentions légales", "href": "/terms" },
+    { "label": "Confidentialité", "href": "/privacy" }
   ],
-  "copyright": "© 2026 Next Level Mentors. All rights reserved."
+  "copyright": "© 2026 Cabinet Anaïs Cruveiller. Tous droits réservés."
 }

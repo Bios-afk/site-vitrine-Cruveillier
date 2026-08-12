@@ -8,9 +8,8 @@ import {
   SiThreads,
 } from "react-icons/si";
 import Container from "../common/Container.jsx";
-import Button from "../common/Button.jsx";
 import Reveal from "../common/Reveal.jsx";
-import { Spark, ArrowUpRight } from "../common/Icons.jsx";
+import { Spark } from "../common/Icons.jsx";
 
 const SOCIAL_ICONS = {
   x: SiX,
@@ -24,10 +23,9 @@ const SOCIAL_ICONS = {
 
 export default function Footer({ data }) {
   const {
-    brand = "Next Level Mentors",
+    brand = "Anaïs Cruveiller",
     tagline,
     columns = [],
-    newsletter,
     social = [],
     legal = [],
     copyright,
@@ -46,32 +44,6 @@ export default function Footer({ data }) {
               <p style={{ marginTop: "1rem", maxWidth: "32ch", color: "var(--foreground-secondary)", lineHeight: 1.6 }}>
                 {tagline}
               </p>
-            )}
-            {newsletter && (
-              <form
-                style={{ marginTop: "1.5rem", display: "flex", flexWrap: "wrap", gap: "0.5rem", maxWidth: "26rem" }}
-                onSubmit={(e) => e.preventDefault()}
-              >
-                <input
-                  type="email"
-                  required
-                  placeholder={newsletter.placeholder || "you@email.com"}
-                  aria-label="Email address"
-                  style={{
-                    flex: "1 1 12rem",
-                    minWidth: 0,
-                    padding: "0.7rem 1rem",
-                    borderRadius: "999px",
-                    border: "1px solid var(--border-strong)",
-                    background: "var(--surface)",
-                    color: "var(--foreground)",
-                    fontSize: "0.92rem",
-                  }}
-                />
-                <Button type="submit" variant="accent" icon={<ArrowUpRight size={16} />} className="nlm-footer-subscribe">
-                  {newsletter.cta || "Join"}
-                </Button>
-              </form>
             )}
           </div>
 
@@ -124,7 +96,7 @@ export default function Footer({ data }) {
           }}
         >
           <p style={{ color: "var(--foreground-muted)", fontSize: "0.85rem" }}>
-            {copyright || `© ${new Date().getFullYear()} ${brand}. All rights reserved.`}
+            {copyright || `© ${new Date().getFullYear()} ${brand}. Tous droits réservés.`}
           </p>
           <div className="flex items-center gap-4" style={{ flexWrap: "wrap" }}>
             {legal.map((l) => (

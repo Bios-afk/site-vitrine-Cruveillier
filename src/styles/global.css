@@ -195,15 +195,6 @@
     transform: translateY(0);
   }
 
-  /* When the footer newsletter form wraps on narrow screens, let the
-     Subscribe button fill the row instead of sitting short and left-aligned. */
-  @media (max-width: 380px) {
-    .nlm-footer-subscribe {
-      flex: 1 1 auto;
-      width: 100%;
-    }
-  }
-
   .nlm-btn--accent {
     background: var(--accent);
     color: var(--accent-foreground);
