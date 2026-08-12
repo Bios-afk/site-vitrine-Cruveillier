@@ -6,8 +6,9 @@
       "title": "Le cabinet",
       "links": [
         { "label": "Accueil", "href": "/" },
-        { "label": "Compétences", "href": "/#competences" },
-        { "label": "Contact", "href": "/contact" }
+        { "label": "Cabinet", "href": "/#cabinet" },
+        { "label": "À propos", "href": "/#about" },
+        { "label": "Compétences", "href": "/#competences" }
       ]
     }
   ],

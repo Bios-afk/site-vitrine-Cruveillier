@@ -1,10 +1,10 @@
 {
   "brand": "Anaïs Cruveiller",
   "links": [
-    { "label": "Home", "href": "/" },
-    { "label": "Podcast", "href": "/podcast" },
-    { "label": "Articles", "href": "/articles" },
-    { "label": "Shows", "href": "/shows" }
+    { "label": "Accueil", "href": "/" },
+    { "label": "Cabinet", "href": "/#cabinet" },
+    { "label": "À propos", "href": "/#about" },
+    { "label": "Compétences", "href": "/#competences" }
   ],
-  "cta": { "label": "Services", "href": "/services" }
+  "cta": { "label": "Contact", "href": "/contact" }
 }

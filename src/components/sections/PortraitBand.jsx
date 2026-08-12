@@ -4,6 +4,7 @@ import ProtectedMedia from "../common/ProtectedMedia.jsx";
 
 export default function PortraitBand({ data }) {
   const {
+    id,
     title,
     image,
     paragraphs = [],
@@ -12,7 +13,7 @@ export default function PortraitBand({ data }) {
   } = data || {};
 
   return (
-    <Container as="section" style={{ paddingBlock: "clamp(2.5rem, 5vw, 4rem)" }}>
+    <Container as="section" id={id} style={{ paddingBlock: "clamp(2.5rem, 5vw, 4rem)" }}>
       <Reveal
         className="nlm-split"
         style={{ "--split-cols": "2fr 3fr", gap: "2.5rem" }}

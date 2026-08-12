@@ -5,6 +5,7 @@ import { Icon } from "../common/Icons.jsx";
 
 export default function PresentationBand({ data }) {
   const {
+    id,
     eyebrow,
     title,
     image,
@@ -14,7 +15,7 @@ export default function PresentationBand({ data }) {
   } = data || {};
 
   return (
-    <Container as="section" style={{ paddingBlock: "clamp(2.5rem, 5vw, 4rem)" }}>
+    <Container as="section" id={id} style={{ paddingBlock: "clamp(2.5rem, 5vw, 4rem)" }}>
       <Reveal
         style={{
           borderRadius: "var(--radius-xl)",
