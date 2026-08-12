@@ -265,6 +265,30 @@
     color: color-mix(in oklab, var(--accent-foreground) 70%, var(--foreground));
   }
 
+  .nlm-presentation-badge {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.9rem 1.1rem;
+    border-radius: var(--radius-lg);
+    background: color-mix(in oklab, white 12%, transparent);
+    border: 1px solid color-mix(in oklab, white 22%, transparent);
+    color: var(--on-hero);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .nlm-presentation-badge__icon {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background: color-mix(in oklab, white 14%, transparent);
+    color: var(--on-hero);
+  }
+
   .nlm-media {
     position: relative;
     width: 100%;
