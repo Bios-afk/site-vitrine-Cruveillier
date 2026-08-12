@@ -4,9 +4,10 @@
 
 :root {
 
-  --accent: #b08d3d;
-  --accent-strong: #96742a;
-  --accent-foreground: #1c2412;
+  --accent: #222918;
+  --accent-strong: #1b2113;
+  --accent-foreground: #ffffff;
+  --accent-tint: #1b2113;
 
   --background: #faf8f1;
   --background-subtle: #f4f1e6;
@@ -41,6 +42,11 @@
 }
 
 .dark {
+  --accent: #b08d3d;
+  --accent-strong: #96742a;
+  --accent-foreground: #1c2412;
+  --accent-tint: #1c2412;
+
   --background: #12160b;
   --background-subtle: #171c0f;
   --surface: #1b2113;
@@ -262,7 +268,7 @@
   }
   .nlm-chip--accent {
     background: color-mix(in oklab, var(--accent) 22%, transparent);
-    color: color-mix(in oklab, var(--accent-foreground) 70%, var(--foreground));
+    color: color-mix(in oklab, var(--accent-tint) 70%, var(--foreground));
   }
 
   .nlm-presentation-badge {
