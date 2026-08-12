@@ -70,27 +70,36 @@ actuel du site.
 - **Badges d'adaptabilité** : les deux points ne sont pas rendus comme du texte
   à tiret (`FeatureStrip` utilise déjà ce pattern juste au-dessus pour
   Efficacité/Rigueur/Proximité — une répétition du même motif serait
-  redondante). Ils sont rendus comme deux badges compacts avec icône, sur le
-  modèle visuel de `.nlm-chip` (déjà utilisé pour les tags des cartes
-  Compétences juste en dessous dans la page) :
+  redondante). Ils sont rendus comme deux badges compacts avec icône, dans le
+  même esprit visuel que les tags `.nlm-chip` des cartes Compétences juste en
+  dessous (fond translucide, coins arrondis, icône d'accent) :
   - icône `clock` + "Des rendez-vous adaptés à vos contraintes
     professionnelles (horaires, déplacements)."
   - icône `location` + "Des rendez-vous adaptés à votre situation
     géographique."
-  - Empilés verticalement (pas en ligne), via le nouveau modificateur
-    `.nlm-chip--on-hero` (voir Changements techniques) pour rester lisible sur
-    `--hero-surface` — `.nlm-chip` seul est pensé pour un fond clair par
-    défaut.
+  - Empilés verticalement (pas en ligne). Contrairement à `.nlm-chip` (pensé
+    pour un mot-clé court sur une seule ligne, pilule très arrondie, police
+    0.74rem), le texte des badges est une phrase complète : `.nlm-chip` n'est
+    donc pas réutilisé tel quel, mais une classe dédiée
+    `.nlm-presentation-badge` (voir Changements techniques) qui reprend les
+    mêmes valeurs de fond/bordure translucides que `.nlm-btn--on-hero`, avec
+    un rayon plus modéré (`--radius-lg`) et une mise en page en ligne
+    (icône + paragraphe) qui peut passer à la ligne.
 - **Animation** : `Reveal` en enveloppe de la carte, comme les autres sections
   (`CtaBand`, `FeatureStrip`).
 
 ## Changements techniques
 
 - **Nouveau composant** `src/components/sections/PresentationBand.jsx` :
-  - Props `{ data }` avec `{ eyebrow, title, image, paragraphs, badges }`.
-  - `paragraphs` : tableau de strings, rendues en `<p>` séquentiels.
-  - `badges` : tableau de `{ icon, text }`, rendues en badges façon chip
-    on-hero (voir Design visuel).
+  - Props `{ data }` avec `{ eyebrow, title, image, paragraphsBefore, badges, paragraphsAfter }`.
+  - `paragraphsBefore` / `paragraphsAfter` : tableaux de strings, rendues en
+    `<p>` séquentiels, respectivement avant et après le bloc de badges — ce
+    découpage en deux tableaux (plutôt qu'un seul `paragraphs`) rend l'ordre
+    d'affichage (paragraphe 1, paragraphe 2, badges, paragraphe 3,
+    paragraphe 4) explicite dans les données plutôt que dépendant d'un index
+    codé en dur dans le composant.
+  - `badges` : tableau de `{ icon, text }`, rendues via `.nlm-presentation-badge`
+    (voir Design visuel).
   - Image rendue via `ProtectedMedia` (cohérence avec `Hero.jsx`, protection
     anti-clic-droit déjà en place ailleurs sur le site).
 - `src/components/data/home.json` : nouvelle clé `presentationSection` entre
@@ -100,26 +109,27 @@ actuel du site.
     "eyebrow": "Le cabinet",
     "title": "Présentation du cabinet",
     "image": { "src": "/img/hero.jpg", "alt": "Le Cabinet d'Avocat Anaïs Cruveiller à Bordeaux" },
-    "paragraphs": [
+    "paragraphsBefore": [
       "Ecouter, comprendre, défendre telle est la devise du Cabinet d'Avocat Anaïs CRUVEILLER qui vous accueille en plein cœur de Bordeaux.",
-      "Soucieux d'apporter des réponses adéquates à vos différentes problématiques, le Cabinet n'hésite pas à s'adapter à vos différents besoins :",
-      "Maître Anaïs CRUVEILLER a choisi d'exercer en structure individuelle afin de pouvoir être au plus près de ses clients. Pour autant, elle n'hésite pas à s'adjoindre en cas de besoins les services de professionnels spécialisés.",
-      "Fort de son dynamisme et de son souhait de rendre accessible à tous les différentes problématiques juridiques, le Cabinet d'Avocat Anaïs CRUVEILLER saura défendre vos intérêts et vous apporter des réponses pertinentes et argumentées."
+      "Soucieux d'apporter des réponses adéquates à vos différentes problématiques, le Cabinet n'hésite pas à s'adapter à vos différents besoins :"
     ],
     "badges": [
       { "icon": "clock", "text": "Des rendez-vous adaptés à vos contraintes professionnelles (horaires, déplacements)." },
       { "icon": "location", "text": "Des rendez-vous adaptés à votre situation géographique." }
+    ],
+    "paragraphsAfter": [
+      "Maître Anaïs CRUVEILLER a choisi d'exercer en structure individuelle afin de pouvoir être au plus près de ses clients. Pour autant, elle n'hésite pas à s'adjoindre en cas de besoins les services de professionnels spécialisés.",
+      "Fort de son dynamisme et de son souhait de rendre accessible à tous les différentes problématiques juridiques, le Cabinet d'Avocat Anaïs CRUVEILLER saura défendre vos intérêts et vous apporter des réponses pertinentes et argumentées."
     ]
   }
   ```
-  Le badge "Des rendez-vous adaptés à…" est retiré du tableau `paragraphs` et
-  déplacé dans `badges` (au lieu d'un préfixe `-` en dur dans une string, sur
-  le modèle `featureStrip`) puisqu'il devient un composant visuel distinct.
-- `src/styles/global.css` : nouveau modificateur `.nlm-chip--on-hero` (même
-  logique que `.nlm-btn--on-hero` existant : fond
-  `color-mix(in oklab, white 12%, transparent)`, texte `var(--on-hero)`,
-  bordure `color-mix(in oklab, white 22%, transparent)`), appliqué en plus de
-  `.nlm-chip` sur les badges de cette section.
+
+- `src/styles/global.css` : nouvelles classes `.nlm-presentation-badge` et
+  `.nlm-presentation-badge__icon` (fond `color-mix(in oklab, white 12%,
+  transparent)`, bordure `color-mix(in oklab, white 22%, transparent)` — mêmes
+  valeurs que `.nlm-btn--on-hero` — mais `border-radius: var(--radius-lg)` et
+  layout flex `align-items: flex-start` pour accueillir une phrase complète
+  sur plusieurs lignes, plutôt que la pilule mono-ligne de `.nlm-chip`).
 - `src/pages/index.astro` :
   - `import PresentationBand from "../components/sections/PresentationBand.jsx";`
   - `<PresentationBand data={home.presentationSection} client:visible />`
