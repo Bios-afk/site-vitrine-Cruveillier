@@ -3,6 +3,7 @@ import BaseLayout from "../layout/BaseLayout.astro";
 import Hero from "../components/sections/Hero.jsx";
 import BrandStrip from "../components/sections/BrandStrip.jsx";
 import FeatureStrip from "../components/sections/FeatureStrip.jsx";
+import PresentationBand from "../components/sections/PresentationBand.jsx";
 import ContentSection from "../components/sections/ContentSection.jsx";
 import GradientCards from "../components/sections/GradientCards.jsx";
 import CtaBand from "../components/sections/CtaBand.jsx";
@@ -20,6 +21,7 @@ export const prerender = true;
 
   <FeatureStrip data={home.featureStrip} client:visible />
   <!-- <BrandStrip data={home.brandStrip} client:visible /> -->
+  <PresentationBand data={home.presentationSection} client:visible />
   <GradientCards
     data={home.competencesSection}
     items={home.competences}
