@@ -9,6 +9,7 @@ export default function Navigation({ data }) {
   const { brand = "Anaïs Cruveiller", links = [], cta, account } = data || {};
   const [scrolled, setScrolled] = useState(false);
   const [path, setPath] = useState("/");
+  const [activeId, setActiveId] = useState("");
   const [open, setOpen] = useState(false);
 
   const rootRef = useRef(null);
@@ -23,16 +24,40 @@ export default function Navigation({ data }) {
     };
     syncPath();
 
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    // Section ids live only on the homepage; on any other page these simply
+    // won't be found and updateActiveSection() resolves to "" every time.
+    const sectionIds = links.map((l) => l.href.split("#")[1]).filter(Boolean);
+
+    let ticking = false;
+    const updateActiveSection = () => {
+      ticking = false;
+      const line = window.innerHeight / 2;
+      let current = "";
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= line) current = id;
+      }
+      setActiveId(current);
+    };
+
+    const onScroll = () => {
+      setScrolled(window.scrollY > 24);
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(updateActiveSection);
+      }
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     document.addEventListener("astro:page-load", syncPath);
+    document.addEventListener("astro:page-load", updateActiveSection);
 
     return () => {
       window.removeEventListener("scroll", onScroll);
       document.removeEventListener("astro:page-load", syncPath);
+      document.removeEventListener("astro:page-load", updateActiveSection);
     };
-  }, []);
+  }, [links]);
 
   useEffect(() => {
     const { gsap } = getGsap();
@@ -100,8 +125,11 @@ export default function Navigation({ data }) {
   const toggleMenu = () => (active.current ? closeMenu() : openMenu());
 
   const isActive = (href) => {
+    if (href.includes("#")) {
+      return href.split("#")[1] === activeId;
+    }
     const clean = href.replace(/\/$/, "") || "/";
-    return clean === "/" ? path === "/" : path === clean || path.startsWith(clean + "/");
+    return clean === "/" ? path === "/" && !activeId : path === clean || path.startsWith(clean + "/");
   };
 
   return (
