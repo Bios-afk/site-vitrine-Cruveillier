@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Container from "../common/Container.jsx";
 import Button from "../common/Button.jsx";
 import ThemeToggle from "../common/ThemeToggle.jsx";
-import { getGsap } from "../../lib/gsap-core.js";
+import { getGsap, EASE, prefersReducedMotion } from "../../lib/gsap-core.js";
 import { User } from "../common/Icons.jsx";
 
 export default function Navigation({ data }) {
@@ -16,6 +16,9 @@ export default function Navigation({ data }) {
   const openTl = useRef(null);
   const closeTl = useRef(null);
   const active = useRef(false);
+  const navRailRef = useRef(null);
+  const pillRef = useRef(null);
+  const linkRefs = useRef({});
 
   useEffect(() => {
     const syncPath = () => {
@@ -57,6 +60,43 @@ export default function Navigation({ data }) {
       document.removeEventListener("astro:page-load", syncPath);
       document.removeEventListener("astro:page-load", updateActiveSection);
     };
+  }, [links]);
+
+  useEffect(() => {
+    const rail = navRailRef.current;
+    const pill = pillRef.current;
+    if (!rail || !pill) return;
+
+    const activeLink = links.find((l) => isActive(l.href));
+    const el = activeLink && linkRefs.current[activeLink.href];
+    const { gsap } = getGsap();
+
+    if (!el) {
+      gsap.to(pill, { opacity: 0, duration: 0.2, overwrite: true });
+      return;
+    }
+
+    const vars = { x: el.offsetLeft, width: el.offsetWidth, opacity: 1 };
+
+    if (prefersReducedMotion()) {
+      gsap.set(pill, vars);
+    } else {
+      gsap.to(pill, { ...vars, duration: 0.45, ease: EASE, overwrite: true });
+    }
+  }, [activeId, path, links]);
+
+  useEffect(() => {
+    const onResize = () => {
+      const rail = navRailRef.current;
+      const pill = pillRef.current;
+      if (!rail || !pill) return;
+      const activeLink = links.find((l) => isActive(l.href));
+      const el = activeLink && linkRefs.current[activeLink.href];
+      if (!el) return;
+      getGsap().gsap.set(pill, { x: el.offsetLeft, width: el.offsetWidth });
+    };
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
   }, [links]);
 
   useEffect(() => {
@@ -160,8 +200,10 @@ export default function Navigation({ data }) {
         </a>
 
         <nav
+          ref={navRailRef}
           className="hidden md:flex items-center"
           style={{
+            position: "relative",
             gap: "0.25rem",
             padding: "0.35rem",
             borderRadius: "999px",
@@ -170,21 +212,38 @@ export default function Navigation({ data }) {
             boxShadow: "0 8px 24px -18px rgba(0,0,0,0.3)",
           }}
         >
+          <div
+            ref={pillRef}
+            aria-hidden="true"
+            style={{
+              position: "absolute",
+              top: "0.35rem",
+              left: 0,
+              height: "calc(100% - 0.7rem)",
+              borderRadius: "999px",
+              background: "var(--accent)",
+              opacity: 0,
+              pointerEvents: "none",
+              willChange: "transform, width",
+            }}
+          />
           {links.map((link) => {
             const isOn = isActive(link.href);
             return (
               <a
                 key={link.href}
+                ref={(el) => (linkRefs.current[link.href] = el)}
                 href={link.href}
                 aria-current={isOn ? "page" : undefined}
                 style={{
+                  position: "relative",
+                  zIndex: 1,
                   padding: "0.5rem 1.05rem",
                   borderRadius: "999px",
                   fontWeight: 500,
                   fontSize: "0.94rem",
                   textDecoration: "none",
-                  transition: "background-color 0.25s ease, color 0.25s ease",
-                  background: isOn ? "var(--accent)" : "transparent",
+                  transition: "color 0.25s ease",
                   color: isOn ? "var(--accent-foreground)" : "var(--foreground-secondary)",
                 }}
               >

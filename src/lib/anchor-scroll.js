@@ -13,10 +13,14 @@ const SETTLE_MS = 600;
 // another anchor before the first hold window has elapsed.
 let scrollToken = 0;
 
-function centerY(target) {
+function topY(target) {
   const rect = target.getBoundingClientRect();
+  // Same offset the browser's own default (non-JS) anchor jump would apply —
+  // see `[id] { scroll-margin-top }` in global.css, which compensates for
+  // the fixed navbar.
+  const scrollMarginTop = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
   const maxScroll = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
-  const y = rect.top + window.scrollY - (window.innerHeight - rect.height) / 2;
+  const y = rect.top + window.scrollY - scrollMarginTop;
   return Math.min(Math.max(y, 0), maxScroll);
 }
 
@@ -30,7 +34,7 @@ function scrollToHash(hash) {
   }
   if (!target) return;
 
-  const y = centerY(target);
+  const y = topY(target);
   const myToken = ++scrollToken;
 
   // Below-the-fold sections hydrate lazily (client:visible) as the page
@@ -102,9 +106,9 @@ function handleClick(event) {
   if (!target) return;
 
   // Astro's ClientRouter also listens for clicks on same-page anchors and,
-  // left unchecked, races our smooth-center scroll with its own native
-  // top-aligned hash jump — the visible symptom is the scroll animation
-  // stopping partway. Stop the event here, in the capture phase (which
+  // left unchecked, races our own scroll with its own native top-aligned
+  // hash jump — the visible symptom is the scroll animation stopping
+  // partway. Stop the event here, in the capture phase (which
   // always runs before ClientRouter's bubble-phase listener on document),
   // so we're the only handler that ever sees this click.
   event.preventDefault();
