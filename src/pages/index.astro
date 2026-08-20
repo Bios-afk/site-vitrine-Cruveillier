@@ -1,14 +1,11 @@
 ---
 import BaseLayout from "../layout/BaseLayout.astro";
 import Hero from "../components/sections/Hero.jsx";
-// import BrandStrip from "../components/sections/BrandStrip.jsx";
 import FeatureStrip from "../components/sections/FeatureStrip.jsx";
 import PresentationBand from "../components/sections/PresentationBand.jsx";
 import PortraitBand from "../components/sections/PortraitBand.jsx";
-// import ContentSection from "../components/sections/ContentSection.jsx";
 import GradientCards from "../components/sections/GradientCards.jsx";
 import FeesSection from "../components/sections/FeesSection.jsx";
-// import CtaBand from "../components/sections/CtaBand.jsx";
 import home from "../components/data/home.json";
 
 export const prerender = true;
@@ -22,7 +19,6 @@ export const prerender = true;
   <Hero data={home.hero} client:load />
 
   <FeatureStrip data={home.featureStrip} client:visible />
-  <!-- <BrandStrip data={home.brandStrip} client:visible /> -->
   <PresentationBand data={home.presentationSection} client:visible />
   <PortraitBand data={home.portraitSection} client:visible />
   <GradientCards
@@ -30,16 +26,9 @@ export const prerender = true;
     items={home.competences}
     client:visible
   />
-  <!-- <ContentSection data={home.showsSection} items={home.shows} client:visible />
-  <ContentSection
-    data={home.podcastSection}
-    items={home.podcast}
-    client:visible
-  /> -->
   <FeesSection
     data={home.honorairesSection}
     modes={home.honorairesModes}
     client:visible
   />
-  <!-- <CtaBand data={home.cta} client:visible /> -->
 </BaseLayout>

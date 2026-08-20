@@ -1,9 +1,8 @@
 import { useEffect, useRef } from "react";
 import ProtectedMedia from "../common/ProtectedMedia.jsx";
-import AvatarGroup from "../common/AvatarGroup.jsx";
 import Button from "../common/Button.jsx";
 import { getGsap, EASE, prefersReducedMotion } from "../../lib/gsap-core.js";
-import { Play, Spark } from "../common/Icons.jsx";
+import { Spark } from "../common/Icons.jsx";
 
 export default function Hero({ data }) {
   const rootRef = useRef(null);
@@ -13,10 +12,7 @@ export default function Hero({ data }) {
     subline,
     description,
     primaryCta,
-    watchCta,
     media,
-    stat,
-    avatars = [],
   } = data || {};
 
   useEffect(() => {
@@ -99,32 +95,6 @@ export default function Hero({ data }) {
               </Button>
             )}
           </div>
-
-          {/* <div className="nlm-hero__bottom">
-            {stat && (
-              <div className="nlm-hero__stat" data-hero-anim>
-                <div>
-                  <div style={{ display: "flex", alignItems: "flex-start", gap: "0.15rem" }}>
-                    <span className="nlm-hero__stat-value">{stat.value?.replace("+", "")}</span>
-                    <Spark size={17} className="nlm-accent-text" style={{ marginTop: "0.1rem" }} />
-                  </div>
-                  <p className="nlm-hero__stat-label">{stat.label}</p>
-                </div>
-                {avatars.length > 0 && (
-                  <AvatarGroup avatars={avatars} maxVisible={3} size={44} overlap={18} variant="light" />
-                )}
-              </div>
-            )}
-
-            {watchCta && (
-              <a href={watchCta.href} className="nlm-hero__watch" data-hero-anim>
-                <span className="nlm-hero__watch-btn">
-                  <Play size={24} />
-                </span>
-                <span style={{ textShadow: "0 1px 10px rgba(0,0,0,0.5)" }}>{watchCta.label}</span>
-              </a>
-            )}
-          </div> */}
         </div>
       </div>
     </section>
