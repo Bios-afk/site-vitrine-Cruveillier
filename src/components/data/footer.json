@@ -8,14 +8,16 @@
         { "label": "Accueil", "href": "/" },
         { "label": "Cabinet", "href": "/#cabinet" },
         { "label": "À propos", "href": "/#about" },
-        { "label": "Compétences", "href": "/#competences" }
+        { "label": "Compétences", "href": "/#competences" },
+        { "label": "Honoraires", "href": "/#honoraires" }
       ]
     }
   ],
   "social": [],
   "legal": [
     { "label": "Mentions légales", "href": "/terms" },
-    { "label": "Confidentialité", "href": "/privacy" }
+    { "label": "Confidentialité", "href": "/privacy" },
+    { "label": "Conditions générales de prestations", "href": "/conditions-generales" }
   ],
   "copyright": "© 2026 Cabinet Anaïs Cruveiller. Tous droits réservés."
 }

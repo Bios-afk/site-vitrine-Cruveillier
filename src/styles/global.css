@@ -1335,4 +1335,101 @@
   .nlm-mosaic-card:hover .nlm-mosaic-card__action {
     transform: translateY(-1px);
   }
+
+  .nlm-fee-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    max-width: 40rem;
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--foreground-secondary);
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .nlm-fee-note__icon {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 999px;
+    background: color-mix(in oklab, var(--accent) 22%, transparent);
+    color: var(--foreground);
+  }
+
+  .nlm-fee-card {
+    max-width: 34rem;
+    padding: 1.75rem 1.85rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+
+  .nlm-fee-card__label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--foreground-muted);
+    margin-bottom: 1.1rem;
+  }
+
+  .nlm-fee-card__note {
+    margin-top: 1rem;
+    font-size: 0.82rem;
+    color: var(--foreground-muted);
+  }
+
+  .nlm-fee-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    padding-block: 0.6rem;
+  }
+  .nlm-fee-row + .nlm-fee-row {
+    border-top: 1px solid var(--border);
+  }
+
+  .nlm-fee-row__label {
+    color: var(--foreground-secondary);
+    font-size: 0.94rem;
+    line-height: 1.4;
+  }
+
+  .nlm-fee-row__leader {
+    flex: 1 1 auto;
+    min-width: 0.75rem;
+    border-bottom: 1px dotted var(--border-strong);
+    transform: translateY(-0.3em);
+  }
+
+  .nlm-fee-row__price {
+    flex-shrink: 0;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--foreground);
+    white-space: nowrap;
+  }
+
+  .nlm-fee-row__quote {
+    flex-shrink: 0;
+    font-style: italic;
+    color: var(--foreground-muted);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 480px) {
+    .nlm-fee-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.15rem;
+    }
+    .nlm-fee-row__leader {
+      display: none;
+    }
+  }
 }

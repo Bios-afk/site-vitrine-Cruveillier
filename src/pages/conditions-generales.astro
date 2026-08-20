@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro";
+import ProsePage from "../components/sections/ProsePage.jsx";
+import conditionsGenerales from "../components/data/conditions-generales.json";
+
+export const prerender = true;
+---
+
+<BaseLayout
+  title={conditionsGenerales.meta.title}
+  description={conditionsGenerales.meta.description}
+  themeColor={conditionsGenerales.meta.themeColor}
+>
+  <ProsePage data={conditionsGenerales.page} client:load />
+</BaseLayout>

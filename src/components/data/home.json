@@ -228,6 +228,54 @@
       "href": "/contact"
     }
   ],
+  "honorairesSection": {
+    "id": "honoraires",
+    "eyebrow": "Honoraires",
+    "title": "Des honoraires clairs, dès l'ouverture du dossier",
+    "intro": "La politique tarifaire du Cabinet se veut la plus transparente possible : les honoraires sont fixés par convention dès l'ouverture du dossier, selon un mode de calcul adapté à chaque situation.",
+    "note": {
+      "icon": "insurance-package",
+      "text": "Vous disposez d'un contrat de protection juridique ? Il peut prendre en charge tout ou partie des honoraires du Cabinet — renseignez-vous auprès de votre assureur sur ses barèmes. Vous restez dans tous les cas libre de choisir votre propre avocat."
+    },
+    "examplesLabel": "À titre d'exemple",
+    "examples": [
+      { "label": "Rendez-vous au cabinet (dans la limite d'une heure)", "price": "80 € HT" },
+      { "label": "Consultation suivie d'une lettre (réclamation, mise en demeure…)", "price": "160 € HT" },
+      { "label": "Consultation juridique écrite", "price": "Sur devis" }
+    ],
+    "examplesNote": "Tarifs applicables à une consultation non suivie d'une ouverture de dossier.",
+    "modesLabel": "Nos modes de facturation",
+    "cta": { "label": "Consulter nos conditions générales de prestations", "href": "/conditions-generales" }
+  },
+  "honorairesModes": [
+    {
+      "icon": "clock",
+      "title": "Honoraire au temps passé",
+      "description": [
+        "-140 € HT (+ 20 % de TVA) de l'heure, selon le taux en vigueur du Cabinet",
+        "-une estimation du nombre d'heures peut être établie selon la nature du dossier",
+        "-des provisions sont demandées au fur et à mesure de l'avancement"
+      ]
+    },
+    {
+      "icon": "invoice",
+      "title": "Honoraire forfaitaire",
+      "description": [
+        "-le coût total de la prestation est déterminé dès l'ouverture du dossier",
+        "-aucun dépassement n'est possible sans l'accord préalable du Client",
+        "-une formule d'abonnement est possible pour les professionnels"
+      ]
+    },
+    {
+      "icon": "percent-circle",
+      "title": "Honoraire de résultat",
+      "description": [
+        "-en complément de l'honoraire au temps passé ou forfaitaire",
+        "-correspond à un pourcentage des sommes obtenues ou économisées",
+        "-le montant est fixé au préalable, d'un commun accord"
+      ]
+    }
+  ],
   "cta": {
     "eyebrow": "Join the community",
     "title": "Go to the next level with us",

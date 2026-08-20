@@ -1,13 +1,14 @@
 ---
 import BaseLayout from "../layout/BaseLayout.astro";
 import Hero from "../components/sections/Hero.jsx";
-import BrandStrip from "../components/sections/BrandStrip.jsx";
+// import BrandStrip from "../components/sections/BrandStrip.jsx";
 import FeatureStrip from "../components/sections/FeatureStrip.jsx";
 import PresentationBand from "../components/sections/PresentationBand.jsx";
 import PortraitBand from "../components/sections/PortraitBand.jsx";
-import ContentSection from "../components/sections/ContentSection.jsx";
+// import ContentSection from "../components/sections/ContentSection.jsx";
 import GradientCards from "../components/sections/GradientCards.jsx";
-import CtaBand from "../components/sections/CtaBand.jsx";
+import FeesSection from "../components/sections/FeesSection.jsx";
+// import CtaBand from "../components/sections/CtaBand.jsx";
 import home from "../components/data/home.json";
 
 export const prerender = true;
@@ -35,5 +36,10 @@ export const prerender = true;
     items={home.podcast}
     client:visible
   /> -->
-  <CtaBand data={home.cta} client:visible />
+  <FeesSection
+    data={home.honorairesSection}
+    modes={home.honorairesModes}
+    client:visible
+  />
+  <!-- <CtaBand data={home.cta} client:visible /> -->
 </BaseLayout>

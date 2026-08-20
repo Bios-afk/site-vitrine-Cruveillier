@@ -4,7 +4,8 @@
     { "label": "Accueil", "href": "/" },
     { "label": "Cabinet", "href": "/#cabinet" },
     { "label": "À propos", "href": "/#about" },
-    { "label": "Compétences", "href": "/#competences" }
+    { "label": "Compétences", "href": "/#competences" },
+    { "label": "Honoraires", "href": "/#honoraires" }
   ],
   "cta": { "label": "Contact", "href": "/contact" }
 }
