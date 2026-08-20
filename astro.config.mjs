@@ -12,7 +12,7 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
-  site: "https://nextlevelmentors.show",
+  site: "https://avocat-cruveiller.fr",
   trailingSlash: "never",
   integrations: [react()],
   // Self-hosted via Astro's Fonts API instead of a render-blocking
