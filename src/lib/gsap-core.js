@@ -1,12 +1,13 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CustomEase } from "gsap/CustomEase";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 let registered = false;
 
 export function getGsap() {
   if (typeof window !== "undefined" && !registered) {
-    gsap.registerPlugin(ScrollTrigger, CustomEase);
+    gsap.registerPlugin(ScrollTrigger, CustomEase, ScrollToPlugin);
 
     CustomEase.create("nlm-smooth", "0.16, 1, 0.3, 1");
 
