@@ -11,25 +11,16 @@
     "description": "Questions, partnerships, press, or pitching yourself as a mentor — we read everything."
   },
   "form": {
-    "eyebrow": "Send a message",
-    "title": "Drop us a line",
+    "eyebrow": "Envoyer un message",
+    "title": "Contactez-nous",
     "intro": "We usually reply within two business days.",
-    "submitLabel": "Send message",
+    "submitLabel": "Envoyer",
     "successNote": "Thanks for reaching out — we'll be in touch within two business days.",
     "fields": [
-      { "name": "name", "label": "Your name", "type": "text", "required": true },
+      { "name": "name", "label": "Nom", "type": "text", "required": true },
       { "name": "email", "label": "Email", "type": "email", "required": true },
       { "name": "topic", "label": "Topic", "type": "text", "required": false },
       { "name": "message", "label": "Message", "type": "textarea", "required": true }
     ]
-  },
-  "channels": {
-    "title": "Other ways to reach us",
-    "intro": "Prefer something specific? Use the right door."
-  },
-  "channelItems": [
-    { "icon": "user", "title": "Become a mentor", "description": "Pitch your story and topics.", "href": "/contact" },
-    { "icon": "mail", "title": "Press & media", "description": "press@nextlevelmentors.show" },
-    { "icon": "megaphone", "title": "Partnerships", "description": "partners@nextlevelmentors.show" }
-  ]
+  }
 }
