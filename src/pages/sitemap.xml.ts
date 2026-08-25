@@ -2,7 +2,7 @@ import type { APIRoute } from "astro";
 
 export const prerender = true;
 
-const BASE_URL = "https://nextlevelmentors.show";
+const BASE_URL = "https://avocat-cruveiller.fr/";
 
 type Entry = { url: string; priority: number; changefreq: string };
 

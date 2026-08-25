@@ -610,6 +610,11 @@
     height: min(86svh, 40rem);
   }
 
+  .nlm-hero__card .nlm-media img,
+  .nlm-hero__card .nlm-media video {
+    object-position: 70% center;
+  }
+
   .nlm-hero__content {
     position: absolute;
     inset: 0;
@@ -723,6 +728,10 @@
       border-radius: var(--radius-xl);
       min-height: 32rem;
       height: min(82svh, 44rem);
+    }
+    .nlm-hero__card .nlm-media img,
+    .nlm-hero__card .nlm-media video {
+      object-position: center;
     }
     .nlm-hero__content {
       padding: 2rem;

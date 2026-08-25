@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nextlevelmentors.show/sitemap.xml
+Sitemap: https://avocat-cruveiller.fr/
