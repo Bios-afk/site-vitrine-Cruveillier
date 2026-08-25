@@ -2,6 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "anais-cruveiller",
   "compatibility_date": "2026-08-20",
+  "account_id": "12603853692f804d5f209b3705950db4",
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page"
