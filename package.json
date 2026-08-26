@@ -1,6 +1,6 @@
 {
-  "name": "anais-cruveiller",
-  "description": "Next Level Mentors — podcast, shows & articles platform. Astro + React + Tailwind + GSAP.",
+  "name": "avocat-cruveiller",
+  "description": "Site vitrine du cabinet d'avocat de Maître Anaïs Cruveiller",
   "type": "module",
   "version": "1.0.0",
   "private": true,
