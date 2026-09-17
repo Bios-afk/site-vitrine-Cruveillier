@@ -8,7 +8,6 @@ type Entry = { url: string; priority: number; changefreq: string };
 
 const allPages: Entry[] = [
   { url: "/", priority: 1.0, changefreq: "monthly" },
-  { url: "/contact", priority: 0.6, changefreq: "monthly" },
   { url: "/conditions-generales", priority: 0.3, changefreq: "yearly" },
   { url: "/privacy", priority: 0.3, changefreq: "yearly" },
   { url: "/terms", priority: 0.3, changefreq: "yearly" },
