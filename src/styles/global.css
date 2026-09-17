@@ -845,6 +845,27 @@
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--cluster-min, 12rem)), 1fr));
   }
 
+  /* Fixed-width cards that wrap and center, so an incomplete last row
+     (e.g. 5 items = 3+2) never strands a lone card against the left edge. */
+  .nlm-gcard-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .nlm-gcard-grid > * {
+    flex: 1 1 19rem;
+    max-width: 22rem;
+  }
+
+  @media (max-width: 30rem) {
+    .nlm-gcard-grid > * {
+      flex-basis: 100%;
+      max-width: none;
+    }
+  }
+
   .nlm-values {
     display: flex;
     flex-wrap: wrap;

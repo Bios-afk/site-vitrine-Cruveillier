@@ -58,8 +58,14 @@
       "Parce que chaque situation juridique est unique, le cabinet adapte sa prise en charge à vos contraintes personnelles et professionnelles :"
     ],
     "badges": [
-      { "icon": "clock", "text": "Flexibilité horaire et déplacements selon vos besoins." },
-      { "icon": "location", "text": "Prise en charge personnalisée selon votre situation (visio et déplacements possibles)." }
+      {
+        "icon": "clock",
+        "text": "Flexibilité horaire et déplacements selon vos besoins."
+      },
+      {
+        "icon": "location",
+        "text": "Prise en charge personnalisée selon votre situation (visio et déplacements possibles)."
+      }
     ],
     "paragraphsAfter": [
       "Afin de garantir un accompagnement sur mesure et une relation directe, Maître Anaïs CRUVEILLER privilégie l'exercice en structure individuelle. Pour les dossiers nécessitant une expertise technique complémentaire, le cabinet s'entoure d'un réseau de professionnels spécialisés.",
@@ -85,33 +91,10 @@
     "id": "competences",
     "eyebrow": "Compétences",
     "title": "Des solutions concrètes à vos problématiques juridiques",
-    "intro": "Quatre domaines d'intervention pour accompagner particuliers et professionnels.",
+    "intro": "Cinq domaines d'intervention pour accompagner particuliers et professionnels.",
     "align": "left"
   },
   "competences": [
-    {
-      "badge": "Contrats",
-      "title": "Droit des contrats et droit des assurances",
-      "description": "Conseil précontractuel, baux, recouvrement de créances et litiges contractuels du quotidien pour particuliers et professionnels.",
-      "tags": [
-        "Responsabilité civile & préjudice corporel",
-        "Recouvrement et contestation de créances",
-        "Litiges bailleurs / locataires",
-        "Rédaction de contrats & conseil aux PME"
-      ],
-      "href": "/contact"
-    },
-    {
-      "badge": "Mineurs",
-      "title": "Droit des mineurs",
-      "description": "Accompagnement des enfants et des parents en matière pénale (mineur auteur ou victime) ainsi qu'en assistance éducative auprès du Juge des enfants.",
-      "tags": [
-        "Droit pénal des mineurs",
-        "Assistance éducative",
-        "Conseil et médiation"
-      ],
-      "href": "/contact"
-    },
     {
       "badge": "Famille",
       "title": "Droit des personnes et de la famille",
@@ -121,19 +104,48 @@
         "Divorce amiable ou contentieux",
         "Garde d'enfants & pensions alimentaires",
         "Adoption simple ou plénière"
-      ],
-      "href": "/contact"
+      ]
+    },
+    {
+      "badge": "Mineurs",
+      "title": "Droit des mineurs",
+      "description": "Accompagnement des enfants et des parents en matière pénale (mineur auteur ou victime) ainsi qu'en assistance éducative auprès du Juge des enfants.",
+      "tags": [
+        "Droit pénal des mineurs",
+        "Assistance éducative",
+        "Conseil et médiation"
+      ]
     },
     {
       "badge": "Pénal",
-      "title": "Droit pénal",
-      "description": "Défense des victimes et des auteurs sous certaines réserves à tous les stades de la procédure (garde à vue, instruction, juridictions pénales, intérêts civils).",
+      "title": "Droit pénal / Droit des victimes",
+      "description": "Défense des victimes et des auteurs sous certaines réserves à tous les stades de la procédure (garde à vue, instruction, juridictions pénales, intérêts civils). Assistance des victimes devant la Cour d'assises.",
       "tags": [
         "Tribunal de police & Tribunal correctionnel",
         "Cour d'assises",
         "Défense des victimes"
-      ],
-      "href": "/contact"
+      ]
+    },
+    {
+      "badge": "Civil usuel",
+      "title": "Droit civil usuel",
+      "description": "Résolution rapide de conflits de la vie courante : troubles de voisinage, litiges locatifs ou immobiliers, inexécution de contrats, dettes et impayés.",
+      "tags": [
+        "Troubles de voisinage",
+        "Litiges locatifs & immobiliers",
+        "Inexécution de contrats",
+        "Négociation amiable ou défense devant les tribunaux"
+      ]
+    },
+    {
+      "badge": "Commercial",
+      "title": "Droit commercial",
+      "description": "Conseil précontractuel, rédaction de conditions générales, recouvrement de créances pour les professionnels.",
+      "tags": [
+        "Conseil précontractuel",
+        "Rédaction de conditions générales",
+        "Recouvrement de créances"
+      ]
     }
   ],
   "honorairesSection": {
@@ -145,8 +157,7 @@
       "icon": "insurance-package",
       "text": "Pensez à vérifier vos contrats d'assurance : beaucoup comportent une garantie « Protection Juridique » couvrant tout ou partie des honoraires d'avocat. Vous conservez la liberté totale du choix de votre avocat, quelle que soit votre compagnie d'assurance."
     },
-    "modesLabel": "Modalités de fixation des honoraires",
-    "cta": { "label": "Consulter nos conditions générales de prestations", "href": "/conditions-generales" }
+    "modesLabel": "Modalités de fixation des honoraires"
   },
   "honorairesModes": [
     {

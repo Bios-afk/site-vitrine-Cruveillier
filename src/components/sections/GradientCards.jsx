@@ -14,7 +14,7 @@ export default function GradientCards({ data = {}, items = [] }) {
         </div>
       )}
 
-      <Stagger className="nlm-cluster" style={{ "--cluster-min": "17rem" }}>
+      <Stagger className="nlm-gcard-grid">
         {items.map((item, i) => {
           const Wrapper = item.href ? "a" : "div";
           return (
@@ -43,11 +43,11 @@ export default function GradientCards({ data = {}, items = [] }) {
                 </div>
               </div>
 
-              <div className="nlm-gcard__footer">
+              {/* <div className="nlm-gcard__footer">
                 <span className="nlm-gcard__arrow" aria-hidden="true">
                   <ArrowUpRight size={18} />
                 </span>
-              </div>
+              </div> */}
             </Wrapper>
           );
         })}
