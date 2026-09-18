@@ -20,7 +20,7 @@ const {
   type = "website",
 } = Astro.props;
 
-const siteOrigin = "https://nextlevelmentors.show";
+const siteOrigin = Astro.site ? Astro.site.href.replace(/\/$/, "") : "https://avocat-cruveiller.fr";
 const absoluteImageUrl = image.startsWith("http")
   ? image
   : `${siteOrigin}${image}`;
