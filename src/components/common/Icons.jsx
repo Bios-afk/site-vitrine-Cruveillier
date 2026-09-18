@@ -158,6 +158,8 @@ const ICOONIA_ALIASES = {
   cart: "cart",
   mail: "mail",
   email: "mail",
+  phone: "telephone",
+  mobile: "calling",
   location: "job-location",
   map: "job-location",
   pin: "job-location",

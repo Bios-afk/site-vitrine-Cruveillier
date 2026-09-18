@@ -11,6 +11,14 @@
         { "label": "Compétences", "href": "/#competences" },
         { "label": "Honoraires", "href": "/#honoraires" }
       ]
+    },
+    {
+      "title": "Contact",
+      "links": [
+        { "label": "05 35 54 61 91", "href": "tel:+33535546191" },
+        { "label": "06 58 13 23 59", "href": "tel:+33658132359" },
+        { "label": "avocat.cruveiller@gmail.com", "href": "mailto:avocat.cruveiller@gmail.com" }
+      ]
     }
   ],
   "social": [],

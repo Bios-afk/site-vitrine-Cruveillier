@@ -642,6 +642,31 @@
     text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
   }
 
+  .nlm-hero__contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.35rem 1.5rem;
+    margin-top: 0.9rem;
+    text-align: center;
+  }
+
+  .nlm-hero__contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--on-hero-muted);
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-decoration: none;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    transition: filter 0.2s ease;
+  }
+  .nlm-hero__contact-item:hover {
+    filter: brightness(0.7);
+  }
+
   .nlm-hero__middle {
     flex-grow: 1;
     display: flex;
@@ -743,6 +768,9 @@
     .nlm-hero__desc {
       max-width: 42ch;
       font-size: clamp(0.9rem, 1.8vw, 1rem);
+    }
+    .nlm-hero__contact-item {
+      font-size: 0.85rem;
     }
     .nlm-hero__stat-value {
       font-size: clamp(2rem, 4.5vw, 2.5rem);

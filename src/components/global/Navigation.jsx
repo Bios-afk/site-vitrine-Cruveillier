@@ -193,7 +193,16 @@ export default function Navigation({ data }) {
           borderBottom: scrolled ? "1px solid var(--border)" : "1px solid transparent",
         }}
       />
-      <Container className="flex items-center justify-between gap-4" style={{ height: "4.75rem", position: "relative" }}>
+      <Container
+        style={{
+          height: "4.75rem",
+          position: "relative",
+          display: "grid",
+          gridTemplateColumns: "1fr auto 1fr",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
         <a href="/" className="flex items-center gap-2 nlm-nav-brand" style={{ textDecoration: "none", color: "var(--foreground)" }}>
           <img src="/logo.svg" alt="" width={52} height={52} style={{ borderRadius: "8px" }} />
           <span style={{ fontWeight: 700, letterSpacing: "-0.01em", fontSize: "1.05rem" }}>{brand}</span>
@@ -204,6 +213,7 @@ export default function Navigation({ data }) {
           className="hidden md:flex items-center"
           style={{
             position: "relative",
+            justifySelf: "center",
             gap: "0.25rem",
             padding: "0.35rem",
             borderRadius: "999px",
@@ -253,7 +263,7 @@ export default function Navigation({ data }) {
           })}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2" style={{ justifySelf: "end" }}>
           <ThemeToggle className="hidden sm:inline-flex" />
           {account && (
             <a

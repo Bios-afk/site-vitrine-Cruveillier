@@ -72,6 +72,7 @@ export default function Footer({ data }) {
                           textDecoration: "none",
                           fontSize: "0.95rem",
                           transition: "color 0.2s ease",
+                          overflowWrap: "anywhere",
                         }}
                         onMouseEnter={(e) => (e.currentTarget.style.color = "var(--foreground)")}
                         onMouseLeave={(e) => (e.currentTarget.style.color = "var(--foreground-secondary)")}

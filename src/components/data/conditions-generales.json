@@ -1,91 +1,110 @@
 {
   "meta": {
     "title": "Conditions générales de prestations",
-    "description": "Conditions générales de prestations du Cabinet d'Avocat Anaïs CRUVEILLER : mission, honoraires, paiement, résiliation et médiation.",
+    "description": "Conditions générales de prestations du Cabinet d'Avocat Anaïs CRUVEILLER : mission, honoraires, paiement, résiliation, rétractation, RGPD et médiation.",
     "themeColor": "#0b0d07"
   },
   "page": {
     "eyebrow": "Légal",
     "title": "Conditions générales de prestations",
-    "updated": "Septembre 2016",
-    "intro": "Les présentes conditions générales s'appliquent à l'ensemble des prestations effectuées par Maître Anaïs CRUVEILLER (ci-après l'Avocat) au bénéfice du Client du Cabinet (ci-après le Client).",
+    "updated": "Septembre 2026",
+    "intro": "Les présentes Conditions Générales de Prestations (CGP) s'appliquent à l'ensemble des prestations de conseils, d'assistance, de représentation et de rédaction d'actes effectuées par Maître Anaïs CRUVEILLER (ci-après l'« Avocat ») au bénéfice de son client (ci-après le « Client »).",
     "sections": [
       {
         "heading": "Article 1 — Champ d'application",
         "paragraphs": [
-          "Les présentes conditions générales s'appliquent à l'ensemble des prestations effectuées par Maître Anaïs CRUVEILLER (ci-après l'Avocat) au bénéfice du Client du Cabinet (ci-après le Client)."
+          "Les présentes Conditions Générales de Prestations (CGP) s'appliquent à l'ensemble des prestations de conseils, d'assistance, de représentation et de rédaction d'actes effectuées par Maître Anaïs CRUVEILLER (ci-après l'« Avocat ») au bénéfice de son client (ci-après le « Client »).",
+          "Toute commande ou acceptation d'une prestation implique l'adhésion sans réserve du Client aux présentes Conditions Générales, qui prévalent sur tout autre document ou conditions d'achat du Client."
         ]
       },
       {
         "heading": "Article 2 — Principes déontologiques du Cabinet",
         "paragraphs": [
-          "Conformément aux règles posées par la loi n° 71-1130 du 31 décembre 1971 modifiée par la loi n° 90-1259 du 31 décembre 1990 (ci-après la Loi), par le décret n° 2005-790 du 12 juillet 2005 relatif aux règles de déontologie de la profession d'avocat et par le Règlement Intérieur National de la profession d'avocat institué par le Conseil National des Barreaux (RIN), l'Avocat s'engage à remplir les missions qui lui sont confiées dans le respect des règles légales et réglementaires qui le concernent ainsi que des valeurs qui constituent les principes essentiels de la profession.",
-          "L'Avocat s'engage à respecter le secret professionnel auquel il est tenu, notamment par les dispositions de l'article 2 du RIN. Le secret professionnel couvre toutes les informations données par le Client et toutes les communications et correspondances que les parties seront amenées à échanger dans le cadre de l'accomplissement de la mission."
+          "Conformément aux règles posées par la Loi n° 71-1130 du 31 décembre 1971 modifiée, par le Décret n° 2005-790 du 12 juillet 2005 relatif aux règles de déontologie de la profession d'avocat et par le Règlement Intérieur National (RIN) institué par le Conseil National des Barreaux, l'Avocat s'engage à remplir les missions qui lui sont confiées dans le respect des règles légales et déontologiques.",
+          "L'Avocat est tenu au secret professionnel général, absolu et illimité dans le temps, conformément à l'article 2 du RIN. Le secret professionnel couvre toutes les informations confiées par le Client ainsi que les communications et correspondances échangées dans le cadre de l'accomplissement de la mission."
         ]
       },
       {
         "heading": "Article 3 — Contours de la mission",
         "paragraphs": [
-          "3.1 – Acceptation de la mission : le Client s'engage par avance à remettre à l'Avocat toute information, tout document nécessaire à l'accomplissement de sa mission.",
-          "L'Avocat se réserve le droit de refuser toute mission s'il estime que celle-ci est contraire aux lois et règlements, aux règles professionnelles, le place en conflit d'intérêt ou plus généralement s'il estime devoir invoquer sa clause de conscience.",
-          "L'Avocat n'est tenu de commencer la mission que lorsque le Client a fait connaître son accord et qu'il a régularisé la convention d'honoraires et réglé la provision demandée.",
-          "3.2 – Définition de la mission : la nature et le contenu de la mission confiée à l'Avocat par le Client, ainsi que les modes de facturation et de paiement, sont définis dans la convention d'honoraires signée par le Client.",
-          "3.3 – Conditions de la mission : toute prestation confiée à l'Avocat implique pour le Client l'acceptation des présentes conditions générales, nonobstant toute stipulation contraire pouvant figurer dans tout autre document et notamment les conditions générales d'achat du Client.",
-          "Les présentes conditions générales annulent et remplacent toutes les conventions orales ou écrites qui auraient pu être conclues antérieurement entre les parties à cet égard, à l'exception de la convention d'honoraires. Toute dérogation aux présentes conditions générales qui serait exceptionnellement acceptée par l'Avocat ne pourra l'être que dans un accord écrit particulier, ne vaudra que pour le dossier immédiatement en cause et ne saurait s'appliquer aux autres rapports d'affaires, passés ou futurs, avec le Client."
+          "3.1 – Acceptation de la mission : le Client s'engage à remettre à l'Avocat toute information, pièce ou document nécessaire à l'accomplissement de sa mission dans les délais impartis. L'Avocat se réserve le droit de refuser toute mission s'il estime que celle-ci est contraire aux lois et règlements, aux règles déontologiques, le place en situation de conflit d'intérêts ou s'il estime devoir invoquer sa clause de conscience.",
+          "L'Avocat n'est tenu de commencer l'exécution de la mission qu'après signature de la Convention d'honoraires par le Client et règlement de la provision demandée.",
+          "3.2 – Définition de la mission : la nature, le périmètre exact de la mission ainsi que les modalités de facturation et de règlement sont obligatoirement définis dans une Convention d'honoraires signée entre l'Avocat et le Client.",
+          "3.3 – Modifications : toute dérogation aux présentes CGP devra faire l'objet d'un accord écrit particulier et ne vaudra que pour le dossier immédiatement concerné."
         ]
       },
       {
-        "heading": "Article 4 — Fixation des honoraires",
+        "heading": "Article 4 — Fixation des honoraires et conditions de règlement",
         "paragraphs": [
-          "Les honoraires sont fixés en accord avec le Client dans la convention d'honoraires.",
-          "4.1 – Principes : conformément aux dispositions de l'article 11 du RIN et de l'article 10 de la Loi, l'Avocat a droit au règlement des honoraires et émoluments qui lui sont dus en rémunération du travail fourni, du service rendu et du résultat obtenu, ainsi qu'au remboursement de ses frais et débours. L'Avocat peut demander à son Client le versement préalable d'une provision à valoir sur ses frais et honoraires. Le montant des honoraires correspond, sous réserve de l'application de la convention d'honoraires, à la facturation de l'ensemble des actes nécessaires à l'instruction du dossier, soit notamment : les rendez-vous dans les locaux de l'Avocat ou à l'extérieur, les recherches, études, consultations, correspondances et entretiens téléphoniques, la rédaction des actes juridiques ou des écritures judiciaires, les déplacements divers ou aux audiences, les réunions d'expertise, les audiences de procédure et de plaidoirie, ainsi que toutes démarches judiciaires, administratives ou autres.",
-          "4.2 – Facturation au forfait : l'Avocat propose, dans la mesure du possible, une facturation au forfait dans la gamme des services juridiques qu'il offre. Toute facturation au forfait acceptée s'impose aux parties quel que soit le temps effectivement consacré au traitement du dossier. La convention d'honoraires prévoit les conditions de prise en charge des dépassements notamment dus aux demandes nouvelles du Client et aux modifications de la situation en cours de mission. L'Avocat propose également aux professionnels une formule d'abonnement, qui fait l'objet d'une convention particulière soumise aux présentes conditions générales.",
-          "4.3 – Facturation au temps passé : la facturation au temps passé est fixée par l'Avocat en fonction de l'évolution du dossier ou à la demande du Client et fait l'objet d'un relevé de prestations. Le taux horaire de l'Avocat figure dans la convention d'honoraires ou, à défaut, est communiqué par tous moyens au Client.",
-          "4.4 – Honoraire complémentaire de résultat : en complément de l'honoraire de base au temps passé ou forfaitaire, un honoraire de résultat peut être prévu, correspondant à un pourcentage des sommes obtenues ou économisées dans le cadre d'un litige, dont le montant est fixé préalablement d'un commun accord. La convention d'honoraires fixe, outre les honoraires de diligences (au temps passé ou au forfait), les critères du succès et le montant des honoraires complémentaires de résultat.",
-          "4.5 – Conditions de paiement : le règlement des honoraires est exigible à réception de la facture et doit parvenir à l'Avocat au plus tard dans les 30 jours de la réception de la facture. Conformément à l'article L. 441-6 alinéa 3 du Code de commerce, tout retard de paiement donnera lieu à l'application d'une pénalité de retard, dont le taux est égal au taux d'intérêt appliqué par la Banque centrale européenne à son opération de refinancement la plus récente, majoré de 10 points. Tout professionnel en situation de retard de paiement est de plein droit débiteur, à l'égard du créancier, d'une indemnité forfaitaire pour frais de recouvrement, dont le montant est fixé par décret à 40 €. Lorsque les frais de recouvrement exposés sont supérieurs au montant de cette indemnité forfaitaire, le créancier peut demander une indemnisation complémentaire, sur justification.",
-          "4.6 – Clause pénale : dans le cas où la carence du Client rend nécessaire un recouvrement judiciaire, celui-ci s'engage à régler, en sus du principal, frais, dépens et émoluments ordinairement et légalement mis à sa charge et de l'indemnité forfaitaire susvisée, une indemnité fixée à 20 % du montant en principal de la créance TTC impayée, à titre de dommages et intérêts conventionnels et forfaitaires.",
-          "4.7 – Suspension des prestations : en cas de défaut de paiement des factures d'honoraires et de frais par le Client, l'Avocat se réserve le droit de suspendre l'exécution de la mission, ce dont il informera le Client en attirant son attention sur les conséquences éventuelles d'une telle suspension. Cette suspension des prestations ne dispense pas le Client de s'acquitter des sommes dues à l'Avocat au titre du travail déjà effectué par celui-ci."
+          "Les honoraires sont fixés en accord avec le Client dans la Convention d'honoraires conformément aux dispositions de l'article 10 de la Loi du 31 décembre 1971 modifiée et de l'article 11 du RIN.",
+          "4.1 – Principes : l'Avocat a droit au règlement des honoraires en rémunération du travail fourni, du service rendu et du résultat obtenu, ainsi qu'au remboursement des frais et débours engagés dans l'intérêt du Client. Des provisions à valoir sur les frais et honoraires peuvent être demandées à tout moment du traitement du dossier.",
+          "4.2 – Facturation au forfait : une rémunération forfaitaire peut être convenue. Ce forfait s'impose aux parties pour le périmètre défini. Tout dépassement lié à une demande nouvelle du Client ou à une évolution imprévue du dossier donnera lieu à un complément d'honoraires préalablement convenu.",
+          "4.3 – Facturation au temps passé : à défaut de forfait, la prestation est facturée au temps passé sur la base d'un taux horaire indiqué dans la Convention d'honoraires. Un relevé détaillé des diligences accomplies est transmis au Client sur demande.",
+          "4.4 – Honoraire complémentaire de résultat : en complément de l'honoraire de base (au forfait ou au temps passé), un honoraire complémentaire de résultat peut être stipulé. Son montant ou son mode de calcul est expressément fixé dans la Convention d'honoraires.",
+          "4.5 – Délais de paiement et pénalités : les factures d'honoraires et de provisions sont payables à réception et au plus tard dans un délai de 30 jours à compter de la date d'émission.",
+          "Pour les professionnels : conformément aux articles L. 441-10 et suivants du Code de commerce, tout retard de paiement entraîne de plein droit l'application de pénalités d'un taux égal au taux d'intérêt appliqué par la Banque centrale européenne à son opération de refinancement la plus récente majoré de 10 points, ainsi qu'une indemnité forfaitaire pour frais de recouvrement de 40 €.",
+          "4.6 – Suspension des prestations : en cas de défaut de règlement d'une facture de frais ou de provision, l'Avocat se réserve le droit de suspendre l'exécution de sa mission après en avoir informé le Client et l'avoir mis en garde contre les conséquences éventuelles. Les prestations déjà accomplies restent intégralement dues."
         ]
       },
       {
-        "heading": "Article 5 — Conditions de résiliation",
+        "heading": "Article 5 — Résiliation",
         "paragraphs": [
-          "Le Client dispose de la possibilité de mettre fin aux relations avec l'Avocat, avec ou sans motif, à sa convenance et à tout moment. Toute demande d'interruption de la mission ne pourra être prise en compte qu'après réception d'un courrier en informant l'Avocat.",
-          "Les prestations réalisées avant cette date seront dues à l'Avocat, et le Client sera tenu de lui régler l'intégralité des honoraires, frais et débours dus à la date de fin des prestations. L'Avocat dispose parallèlement de la même possibilité de cesser tout travail pour le compte du Client, avec ou sans motif, selon les règles de déontologie de la profession et à la condition de laisser au Client un délai raisonnable pour confier ses affaires à un autre cabinet."
+          "Le Client peut mettre fin à la mission de l'Avocat à tout moment, sans motif, par notification écrite. Les honoraires, frais et débours correspondant aux prestations réalisées jusqu'à la date de réception de cette notification restent dus à l'Avocat.",
+          "L'Avocat peut également renoncer à s'occuper d'un dossier sous réserve d'en informer le Client dans un délai raisonnable afin de ne pas compromettre la défense de ses intérêts."
         ]
       },
       {
-        "heading": "Article 6 — Propriété intellectuelle",
+        "heading": "Article 6 — Droit de rétractation (contrats conclus à distance ou hors établissement)",
         "paragraphs": [
-          "L'Avocat concède au Client, dans les conditions convenues, un droit d'usage personnel et pour ses besoins propres des documents qui sont établis dans son intérêt. Ils ne peuvent être utilisés par le Client que dans le cadre de l'affaire en cause.",
-          "Toute réutilisation postérieure, même dans le contexte d'une affaire similaire et sans l'autorisation préalable de l'Avocat, est prohibée.",
-          "Les consultations, actes, contrats ou tout document rédigé, ainsi que tous les droits éventuels de copie, reproduction et édition des documents issus de la mission, en dehors de l'usage concédé, restent la propriété de l'Avocat et sont protégés par les dispositions du Code de la propriété intellectuelle."
+          "Lorsque la Convention d'honoraires est conclue à distance (via le site internet, par visioconférence, téléphone ou courriel) ou hors établissement avec un Client ayant la qualité de consommateur, ce dernier dispose d'un délai de 14 jours francs pour exercer son droit de rétractation sans avoir à justifier de motifs ni à payer de pénalités.",
+          "Si le Client demande expressément à l'Avocat de commencer l'exécution des prestations avant la fin du délai de rétractation, il conserve son droit de rétractation mais reste tenu au paiement des honoraires correspondant au travail effectivement réalisé jusqu'à la notification de sa décision."
         ]
       },
       {
-        "heading": "Article 7 — Responsabilité du Cabinet",
+        "heading": "Article 7 — Propriété intellectuelle",
         "paragraphs": [
-          "7.1 – Aléa judiciaire : toute procédure judiciaire comportant par nature un aléa, le Cabinet ne saurait être tenu pour responsable des conséquences de cet aléa.",
-          "7.2 – Utilisation ultérieure des consultations du Cabinet : l'Avocat, membre du Cabinet, qui exerce ses fonctions de conseil juridique dans le cadre d'affaires correspondant à une situation donnée à un moment donné, ne saurait être reconnu responsable de l'utilisation ultérieure de ses consultations et de ses conseils dans un cadre différent de celui de l'affaire traitée, que cette utilisation soit le fait du Client lui-même ou de tout tiers."
+          "Les consultations, avis, actes et tous documents juridiques rédigés par l'Avocat demeurent sa propriété intellectuelle au sens du Code de la propriété intellectuelle.",
+          "L'Avocat concède au Client un droit d'usage personnel et confidentiel des documents produits dans le cadre strict de l'affaire concernée. Toute reproduction, diffusion ou réutilisation pour d'autres affaires sans l'accord préalable écrit de l'Avocat est strictement interdite."
         ]
       },
       {
-        "heading": "Article 8 — Non-exclusivité",
+        "heading": "Article 8 — Responsabilité et aléa judiciaire",
         "paragraphs": [
-          "En acceptant la mission, l'Avocat n'accepte de souscrire à aucun engagement d'exclusivité au profit du Client et reste libre d'accepter toute autre mission d'un autre client, même si la mission est d'une nature semblable ou que le client exerce la même activité que le Client, à l'exception de la situation de conflit d'intérêt."
+          "L'Avocat est tenu à une obligation de moyens. Une procédure judiciaire comportant par nature un aléa, la responsabilité de l'Avocat ne saurait être engagée en raison du résultat de la procédure.",
+          "L'Avocat ne peut pas non plus être tenu responsable de l'utilisation ultérieure de ses consultations et conseils dans un cadre ou pour une affaire différente de celle pour laquelle ils ont été rendus."
         ]
       },
       {
-        "heading": "Article 9 — Force majeure",
+        "heading": "Article 9 — Non-exclusivité",
         "paragraphs": [
-          "L'Avocat ne pourra être considéré comme défaillant dans l'exécution de ses obligations si cette défaillance est due à un événement insurmontable et irrésistible, notamment dans toutes les circonstances définies ci-après : catastrophe naturelle, incendie, tremblement de terre, tempête, dégâts des eaux, grèves, décision gouvernementale ou législative, défaillance du réseau d'électricité, blocage des réseaux de transport ou de télécommunication, perte de connexion Internet due à des opérateurs publics ou privés."
+          "Sauf accord exprès contraire, l'acceptation d'une mission n'emporte aucun engagement d'exclusivité au profit du Client, sous réserve du respect du secret professionnel et de l'absence de conflit d'intérêts."
         ]
       },
       {
-        "heading": "Article 10 — Compétence judiciaire, loi applicable et médiation",
+        "heading": "Article 10 — Force majeure",
         "paragraphs": [
-          "Les présentes conditions générales sont soumises à la loi française. Toute contestation concernant le montant et le recouvrement des honoraires, frais et débours de l'Avocat ne peut être réglée, à défaut d'accord entre les parties, qu'en recourant à la procédure prévue aux articles 174 et suivants du décret n° 91-1197 du 27 novembre 1991 organisant la profession d'avocat. Le Bâtonnier de l'Ordre des Avocats à la Cour d'Appel de Bordeaux est saisi à la requête de la partie la plus diligente.",
-          "Le Client est informé de la possibilité de recourir au Médiateur de la consommation de la profession d'avocat : Monsieur Jérôme HERCE, 22 rue de Londres, 75009 Paris."
+          "La responsabilité de l'Avocat ne pourra être recherchée si l'exécution de l'une de ses obligations est empêchée ou retardée par un cas de force majeure au sens de l'article 1218 du Code civil, ou par tout événement indépendant de sa volonté (défaillance des réseaux de télécommunication, décisions administratives ou judiciaires, etc.)."
+        ]
+      },
+      {
+        "heading": "Article 11 — Protection des données personnelles (RGPD)",
+        "paragraphs": [
+          "Conformément au Règlement Général sur la Protection des Données (RGPD — Règlement UE 2016/679) et à la loi n° 78-17 du 6 janvier 1978 modifiée, l'Avocat traite des données à caractère personnel nécessaires à la gestion des dossiers de ses clients.",
+          "– Finalités du traitement : traitement des dossiers juridiques et judiciaires, facturation, suivi de la relation client, gestion du site internet.",
+          "– Conservation : les données sont conservées pendant la durée de la relation contractuelle, puis archivées conformément aux obligations légales et déontologiques d'archivage (notamment pendant les durées de prescription applicables).",
+          "– Droits du Client : le Client dispose d'un droit d'accès, de rectification, d'effacement, de limitation du traitement, d'opposition et de portabilité de ses données. Il peut exercer ses droits en contactant le cabinet à l'adresse e-mail dédiée ou par courrier postal.",
+          "En cas de contestation, le Client a le droit de former une réclamation auprès de la CNIL (www.cnil.fr)."
+        ]
+      },
+      {
+        "heading": "Article 12 — Loi applicable, différends et médiation de la consommation",
+        "paragraphs": [
+          "Les présentes Conditions Générales de Prestations sont régies par le droit français.",
+          "12.1 – Contestation des honoraires : toute contestation relative au montant, à la fixation ou au recouvrement des honoraires de l'Avocat doit être soumise à la procédure spécifique prévue aux articles 174 et suivants du Décret n° 91-1197 du 27 novembre 1991. Le Bâtonnier de l'Ordre des Avocats au Barreau de Bordeaux est saisi à la requête de la partie la plus diligente.",
+          "12.2 – Médiation de la consommation : conformément aux articles L. 612-1 et suivants du Code de la consommation, le Client ayant la qualité de consommateur est informé qu'en cas de litige ne relevant pas de la contestation des honoraires, il a la possibilité de recourir gratuitement au Médiateur national de la consommation de la profession d'avocat :",
+          "– Voie postale : Médiateur de la consommation de la profession d'avocat, 180 boulevard Haussmann, 75008 Paris",
+          "– Adresse courriel : mediateur-conso@mediateur-consommation-avocat.fr",
+          "– Site internet : https://mediateur-consommation-avocat.fr"
         ]
       }
     ]

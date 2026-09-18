@@ -12,7 +12,12 @@
     ],
     "description": "Écouter, comprendre, défendre. Telle est la devise du Cabinet d’Avocat Anaïs CRUVEILLER, situé au cœur de Bordeaux.",
     "primaryCta": { "label": "Compétences", "href": "/#competences" },
-    "media": { "src": "/img/hero.jpg", "poster": "/img/hero.jpg" }
+    "media": { "src": "/img/hero.jpg", "poster": "/img/hero.jpg" },
+    "contacts": [
+      { "icon": "phone", "label": "05 35 54 61 91", "href": "tel:+33535546191" },
+      { "icon": "mobile", "label": "06 58 13 23 59", "href": "tel:+33658132359" },
+      { "icon": "mail", "label": "avocat.cruveiller@gmail.com", "href": "mailto:avocat.cruveiller@gmail.com" }
+    ]
   },
   "featureStrip": {
     "features": [

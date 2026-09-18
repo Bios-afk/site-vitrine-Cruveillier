@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import ProtectedMedia from "../common/ProtectedMedia.jsx";
 import Button from "../common/Button.jsx";
 import { getGsap, EASE, prefersReducedMotion } from "../../lib/gsap-core.js";
-import { Spark } from "../common/Icons.jsx";
+import { Spark, Icon } from "../common/Icons.jsx";
 
 export default function Hero({ data }) {
   const rootRef = useRef(null);
@@ -13,6 +13,7 @@ export default function Hero({ data }) {
     description,
     primaryCta,
     media,
+    contacts = [],
   } = data || {};
 
   useEffect(() => {
@@ -65,7 +66,6 @@ export default function Hero({ data }) {
         </div>
 
         <div className="nlm-hero__content">
-
           <div className="nlm-hero__middle">
             <h1 className="nlm-display nlm-hero__title" data-hero-anim>
               {headline.map((word, i) => (
@@ -95,6 +95,17 @@ export default function Hero({ data }) {
               </Button>
             )}
           </div>
+
+          {contacts.length > 0 && (
+            <div className="nlm-hero__contact" data-hero-anim>
+              {contacts.map((c, i) => (
+                <a key={i} href={c.href} className="nlm-hero__contact-item">
+                  <Icon name={c.icon} size={14} />
+                  <span>{c.label}</span>
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </section>
